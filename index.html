@@ -62,7 +62,6 @@
       </a>
     </div>
 
-    <!-- SIGNATURE CRORE BET LOGO -->
     <a href="#" class="bg-[#0b0c0e] text-white font-black tracking-tight px-2.5 py-1 rounded-md text-sm flex items-center gap-1 shadow-xs">
       <span>CRORE</span>
       <span class="bg-[#f5b800] text-[#0b0c0e] px-1.5 py-0.2 rounded text-xs font-black">BET</span>
@@ -760,22 +759,22 @@
     </div>
   </div>
 
-  <!-- MODAL 1: LOG IN (Matches screenshot size & bottom-anchored sheet look) -->
-  <div id="loginModal" class="fixed inset-0 z-50 bg-black/65 hidden items-end justify-center pt-12">
-    <div class="bg-white w-full max-w-[420px] rounded-t-[28px] px-5 pt-6 pb-7 relative shadow-2xl">
-      <div class="flex items-center justify-between mb-4">
+  <!-- MODAL 1: LOG IN (Floating elevated card matching reference 12394_2.jpg) -->
+  <div id="loginModal" class="fixed inset-0 z-50 bg-black/65 hidden items-end sm:items-center justify-center px-2.5 pb-6 sm:p-4">
+    <div class="bg-white w-full max-w-[400px] rounded-[24px] px-5 pt-5 pb-6 relative shadow-2xl">
+      <div class="flex items-center justify-between mb-3.5">
         <i class="fa-regular fa-comments text-gray-700 text-xl"></i>
-        <h3 class="font-extrabold text-[19px] text-gray-900 tracking-tight">LOG IN</h3>
+        <h3 class="font-extrabold text-[18px] text-gray-900 tracking-tight">LOG IN</h3>
         <button type="button" onclick="closeModals()" class="w-8 h-8 rounded-xl bg-gray-100 text-gray-700 flex items-center justify-center">
           <i class="fa-solid fa-xmark text-sm"></i>
         </button>
       </div>
 
-      <p class="text-[13px] text-gray-700 mb-4">
+      <p class="text-[13px] text-gray-700 mb-3.5">
         New user? <button type="button" onclick="switchModal('registerModal')" class="font-bold text-[#f5b800]">Registration</button>
       </p>
 
-      <div class="grid grid-cols-2 gap-2.5 mb-4">
+      <div class="grid grid-cols-2 gap-2.5 mb-3.5">
         <button id="tabEmailBtn" type="button" onclick="switchLoginTab('email')" class="bg-gray-100 text-gray-800 font-bold text-[13px] py-3 rounded-xl flex items-center justify-center gap-2">
           <i class="fa-solid fa-envelope text-sm"></i> Email or ID
         </button>
@@ -784,16 +783,16 @@
         </button>
       </div>
 
-      <form onsubmit="handleFormSubmit(event, 'Login')" class="space-y-3.5">
+      <form onsubmit="handleFormSubmit(event, 'Login')" class="space-y-3">
         <div id="emailInputWrap" class="hidden bg-gray-100 rounded-xl overflow-hidden">
           <input id="loginEmailInput" type="text" placeholder="Email/Account ID" class="w-full bg-transparent px-3.5 py-3.5 text-[13px] text-gray-900 placeholder-gray-400 focus:outline-none" />
         </div>
 
-        <div id="phoneInputWrap" class="flex items-center gap-2.5">
-          <span class="bg-gray-100 rounded-xl px-3.5 py-3.5 text-[13px] font-bold text-gray-800 flex items-center gap-1.5 shrink-0">
+        <div id="phoneInputWrap" class="flex items-center bg-gray-100 rounded-xl divide-x divide-gray-200 overflow-hidden">
+          <span class="px-3.5 py-3.5 text-[13px] font-bold text-gray-800 flex items-center gap-1.5 shrink-0">
             🇮🇳 +91
           </span>
-          <input id="loginPhoneInput" type="tel" placeholder="Phone number" class="w-full bg-gray-100 rounded-xl px-3.5 py-3.5 text-[13px] text-gray-900 placeholder-gray-400 focus:outline-none" />
+          <input id="loginPhoneInput" type="tel" placeholder="Phone number" class="w-full bg-transparent px-3.5 py-3.5 text-[13px] text-gray-900 placeholder-gray-400 focus:outline-none" />
         </div>
 
         <div class="flex items-center bg-gray-100 rounded-xl px-3.5">
@@ -812,7 +811,7 @@
         </button>
       </form>
 
-      <div class="flex items-center gap-2.5 my-4">
+      <div class="flex items-center gap-2.5 my-3.5">
         <div class="h-px bg-gray-200 flex-1"></div>
         <span class="text-xs font-bold text-gray-700">OR</span>
         <div class="h-px bg-gray-200 flex-1"></div>
@@ -832,11 +831,11 @@
   </div>
 
   <!-- MODAL 2: RECOVER PASSWORD -->
-  <div id="resetModal" class="fixed inset-0 z-50 bg-black/65 hidden items-end justify-center pt-12">
-    <div class="bg-white w-full max-w-[420px] rounded-t-[28px] px-5 pt-6 pb-7 relative shadow-2xl">
+  <div id="resetModal" class="fixed inset-0 z-50 bg-black/65 hidden items-end sm:items-center justify-center px-2.5 pb-6 sm:p-4">
+    <div class="bg-white w-full max-w-[400px] rounded-[24px] px-5 pt-5 pb-6 relative shadow-2xl">
       <div class="flex items-center justify-between mb-4">
         <span class="w-8"></span>
-        <h3 class="font-extrabold text-[18px] text-gray-900 tracking-tight">Recover a password</h3>
+        <h3 class="font-extrabold text-[17px] text-gray-900 tracking-tight">Recover a password</h3>
         <button type="button" onclick="closeModals()" class="w-8 h-8 rounded-xl bg-gray-100 text-gray-700 flex items-center justify-center">
           <i class="fa-solid fa-xmark text-sm"></i>
         </button>
@@ -860,11 +859,11 @@
           <input id="resetEmailInput" type="email" placeholder="Email" class="w-full bg-gray-100 rounded-xl px-3.5 py-3.5 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
         </div>
 
-        <div id="resetPhoneWrap" class="hidden flex items-center gap-2">
-          <span class="bg-gray-100 rounded-xl px-3.5 py-3.5 text-xs font-bold text-gray-800 flex items-center gap-1.5 shrink-0">
+        <div id="resetPhoneWrap" class="hidden flex items-center bg-gray-100 rounded-xl divide-x divide-gray-200 overflow-hidden">
+          <span class="px-3.5 py-3.5 text-xs font-bold text-gray-800 flex items-center gap-1.5 shrink-0">
             🇮🇳 +91
           </span>
-          <input id="resetPhoneInput" type="tel" placeholder="Phone number" class="w-full bg-gray-100 rounded-xl px-3.5 py-3.5 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
+          <input id="resetPhoneInput" type="tel" placeholder="Phone number" class="w-full bg-transparent px-3.5 py-3.5 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
         </div>
 
         <button type="button" onclick="switchModal('loginModal')" class="w-full border border-gray-200 hover:bg-gray-50 text-gray-900 font-bold text-xs py-3.5 rounded-xl transition">
@@ -879,8 +878,8 @@
   </div>
 
   <!-- MODAL 3: REGISTRATION -->
-  <div id="registerModal" class="fixed inset-0 z-50 bg-black/65 hidden items-end justify-center pt-12">
-    <div class="bg-white w-full max-w-[420px] rounded-t-[28px] px-5 pt-6 pb-7 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+  <div id="registerModal" class="fixed inset-0 z-50 bg-black/65 hidden items-end sm:items-center justify-center px-2.5 pb-6 sm:p-4">
+    <div class="bg-white w-full max-w-[400px] rounded-[24px] px-5 pt-5 pb-6 relative shadow-2xl max-h-[88vh] overflow-y-auto">
       <div class="flex items-center justify-between mb-3">
         <i class="fa-regular fa-comments text-gray-700 text-lg"></i>
         <h3 class="font-extrabold text-base text-gray-900">REGISTRATION</h3>
@@ -894,11 +893,11 @@
       </p>
 
       <form onsubmit="handleFormSubmit(event, 'Registration')" class="space-y-3">
-        <div class="flex items-center gap-2">
-          <span class="bg-gray-100 rounded-xl px-3.5 py-3 text-xs font-bold text-gray-800 flex items-center gap-1.5 shrink-0">
+        <div class="flex items-center bg-gray-100 rounded-xl divide-x divide-gray-200 overflow-hidden">
+          <span class="px-3.5 py-3 text-xs font-bold text-gray-800 flex items-center gap-1.5 shrink-0">
             🇮🇳 +91
           </span>
-          <input type="tel" placeholder="Phone number" required class="w-full bg-gray-100 rounded-xl px-3.5 py-3 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
+          <input type="tel" placeholder="Phone number" required class="w-full bg-transparent px-3.5 py-3 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
         </div>
 
         <div class="flex items-center bg-gray-100 rounded-xl px-3.5">

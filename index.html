@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <title>CRORE BET - Online Casino & Sports</title>
+  <title>CRORE BET - Online Casino &amp; Sports</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -33,19 +33,26 @@
       height: 112px;
       border-radius: 14px;
       overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+      box-shadow: 0 5px 14px rgba(0, 0, 0, 0.14);
     }
     .game-thumb svg {
       width: 100%;
       height: 100%;
       display: block;
     }
+    @keyframes pulseDot {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.45; transform: scale(0.85); }
+    }
+    .live-dot {
+      animation: pulseDot 1.6s infinite;
+    }
   </style>
 </head>
 <body class="max-w-md mx-auto bg-white min-h-screen relative overflow-x-hidden">
 
   <!-- TOP STICKY HEADER -->
-  <header class="sticky top-0 z-30 bg-white border-b border-gray-100 px-3.5 py-2.5 flex items-center justify-between">
+  <header class="sticky top-0 z-30 bg-white/95 backdrop-blur-xs border-b border-gray-100 px-3.5 py-2.5 flex items-center justify-between">
     <div class="flex items-center gap-4">
       <button type="button" onclick="openDrawer()" class="text-gray-800 text-xl focus:outline-none">
         <i class="fa-solid fa-bars"></i>
@@ -55,9 +62,10 @@
       </a>
     </div>
 
-    <a href="#" class="bg-black text-white font-black tracking-tight px-2.5 py-1 rounded-md text-sm flex items-center gap-1 shadow-sm">
+    <!-- SIGNATURE CRORE BET LOGO -->
+    <a href="#" class="bg-[#0b0c0e] text-white font-black tracking-tight px-2.5 py-1 rounded-md text-sm flex items-center gap-1 shadow-xs">
       <span>CRORE</span>
-      <span class="bg-[#f5b800] text-black px-1.5 py-0.2 rounded text-xs font-extrabold">BET</span>
+      <span class="bg-[#f5b800] text-[#0b0c0e] px-1.5 py-0.2 rounded text-xs font-black">BET</span>
     </a>
 
     <div class="flex items-center gap-3.5">
@@ -159,6 +167,7 @@
                 </radialGradient>
               </defs>
               <rect width="220" height="140" fill="url(#aviatorBg)"/>
+              <circle cx="176" cy="20" r="4" fill="#4ade80"/>
               <path d="M15 112 Q95 95 168 38" stroke="#fb7185" stroke-width="3" fill="none" stroke-dasharray="5 4" opacity="0.8"/>
               <path d="M148 36 L184 26 L169 52 L162 42 Z" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
               <text x="110" y="92" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-style="italic" font-weight="900" font-size="30">Aviator</text>
@@ -234,6 +243,9 @@
         <div class="flex items-center gap-2">
           <i class="fa-solid fa-user-tie text-gray-800 text-base"></i>
           <h2 class="font-extrabold text-base text-gray-900">TOP Live Games</h2>
+          <span class="bg-red-100 text-red-600 text-[9px] font-black px-1.5 py-0.5 rounded-full flex items-center gap-1">
+            <span class="w-1.5 h-1.5 rounded-full bg-red-600 live-dot"></span> LIVE
+          </span>
         </div>
         <a href="#" class="text-xs font-medium text-gray-500 flex items-center gap-1">
           More games <i class="fa-solid fa-chevron-right text-[10px]"></i>
@@ -537,9 +549,9 @@
       </div>
 
       <div class="bg-white px-4 py-6 flex flex-col items-center space-y-4">
-        <div class="bg-black text-white font-black tracking-tight px-3 py-1 rounded-md text-base flex items-center gap-1">
+        <div class="bg-[#0b0c0e] text-white font-black tracking-tight px-3 py-1 rounded-md text-base flex items-center gap-1">
           <span>CRORE</span>
-          <span class="bg-[#f5b800] text-black px-1.5 rounded text-sm font-extrabold">BET</span>
+          <span class="bg-[#f5b800] text-[#0b0c0e] px-1.5 rounded text-sm font-black">BET</span>
         </div>
 
         <div class="w-full bg-gray-100 rounded-xl px-3.5 py-2.5 flex items-center justify-between text-xs font-semibold text-gray-800">
@@ -621,7 +633,7 @@
               <span>Sport</span>
               <i class="fa-solid fa-chevron-down text-gray-500"></i>
             </summary>
-            <p class="mt-2 font-normal text-gray-600">Cricket, Football, Tennis, Kabaddi & Live Sports Markets.</p>
+            <p class="mt-2 font-normal text-gray-600">Cricket, Football, Tennis, Kabaddi &amp; Live Sports Markets.</p>
           </details>
 
           <details class="bg-white rounded-xl px-4 py-3 text-xs font-bold text-gray-900 shadow-2xs">
@@ -629,7 +641,7 @@
               <span>Casino</span>
               <i class="fa-solid fa-chevron-down text-gray-500"></i>
             </summary>
-            <p class="mt-2 font-normal text-gray-600">Slots, Crash Games, Roulette, Teen Patti, Andar Bahar & Live Dealers.</p>
+            <p class="mt-2 font-normal text-gray-600">Slots, Crash Games, Roulette, Teen Patti, Andar Bahar &amp; Live Dealers.</p>
           </details>
         </div>
 
@@ -673,9 +685,9 @@
         <button type="button" onclick="closeDrawer()" class="text-gray-800 text-xl">
           <i class="fa-solid fa-xmark"></i>
         </button>
-        <div class="bg-black text-white font-black tracking-tight px-2.5 py-1 rounded-md text-sm flex items-center gap-1">
+        <div class="bg-[#0b0c0e] text-white font-black tracking-tight px-2.5 py-1 rounded-md text-sm flex items-center gap-1">
           <span>CRORE</span>
-          <span class="bg-[#f5b800] text-black px-1.5 rounded text-xs font-extrabold">BET</span>
+          <span class="bg-[#f5b800] text-[#0b0c0e] px-1.5 rounded text-xs font-black">BET</span>
         </div>
       </div>
 
@@ -715,7 +727,7 @@
         </button>
       </div>
 
-      <p class="text-[11px] font-bold text-gray-400 uppercase mb-2">SUPPORT & SETTINGS</p>
+      <p class="text-[11px] font-bold text-gray-400 uppercase mb-2">SUPPORT &amp; SETTINGS</p>
       <div class="space-y-3">
         <div class="flex items-center justify-between">
           <div class="flex items-center gap-3">
@@ -748,69 +760,69 @@
     </div>
   </div>
 
-  <!-- MODAL 1: LOG IN -->
-  <div id="loginModal" class="fixed inset-0 z-50 bg-black/60 hidden items-center justify-center p-4">
-    <div class="bg-white w-full max-w-sm rounded-3xl p-5 relative shadow-2xl">
+  <!-- MODAL 1: LOG IN (Matches screenshot size & bottom-anchored sheet look) -->
+  <div id="loginModal" class="fixed inset-0 z-50 bg-black/65 hidden items-end justify-center pt-12">
+    <div class="bg-white w-full max-w-[420px] rounded-t-[28px] px-5 pt-6 pb-7 relative shadow-2xl">
       <div class="flex items-center justify-between mb-4">
         <i class="fa-regular fa-comments text-gray-700 text-xl"></i>
-        <h3 class="font-extrabold text-lg text-gray-900 tracking-tight">LOG IN</h3>
+        <h3 class="font-extrabold text-[19px] text-gray-900 tracking-tight">LOG IN</h3>
         <button type="button" onclick="closeModals()" class="w-8 h-8 rounded-xl bg-gray-100 text-gray-700 flex items-center justify-center">
           <i class="fa-solid fa-xmark text-sm"></i>
         </button>
       </div>
 
-      <p class="text-xs text-gray-700 mb-3.5">
+      <p class="text-[13px] text-gray-700 mb-4">
         New user? <button type="button" onclick="switchModal('registerModal')" class="font-bold text-[#f5b800]">Registration</button>
       </p>
 
-      <div class="grid grid-cols-2 gap-2.5 mb-3.5">
-        <button id="tabEmailBtn" type="button" onclick="switchLoginTab('email')" class="brand-yellow text-gray-900 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2 shadow-2xs">
+      <div class="grid grid-cols-2 gap-2.5 mb-4">
+        <button id="tabEmailBtn" type="button" onclick="switchLoginTab('email')" class="bg-gray-100 text-gray-800 font-bold text-[13px] py-3 rounded-xl flex items-center justify-center gap-2">
           <i class="fa-solid fa-envelope text-sm"></i> Email or ID
         </button>
-        <button id="tabPhoneBtn" type="button" onclick="switchLoginTab('phone')" class="bg-gray-100 text-gray-800 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2">
+        <button id="tabPhoneBtn" type="button" onclick="switchLoginTab('phone')" class="brand-yellow text-gray-900 font-bold text-[13px] py-3 rounded-xl flex items-center justify-center gap-2 shadow-2xs">
           <i class="fa-solid fa-phone text-sm"></i> Phone
         </button>
       </div>
 
-      <form onsubmit="handleFormSubmit(event, 'Login')" class="space-y-3">
-        <div id="emailInputWrap" class="bg-gray-100 rounded-xl overflow-hidden">
-          <input id="loginEmailInput" type="text" placeholder="Email/Account ID" class="w-full bg-transparent px-3.5 py-3.5 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
+      <form onsubmit="handleFormSubmit(event, 'Login')" class="space-y-3.5">
+        <div id="emailInputWrap" class="hidden bg-gray-100 rounded-xl overflow-hidden">
+          <input id="loginEmailInput" type="text" placeholder="Email/Account ID" class="w-full bg-transparent px-3.5 py-3.5 text-[13px] text-gray-900 placeholder-gray-400 focus:outline-none" />
         </div>
 
-        <div id="phoneInputWrap" class="hidden flex items-center gap-2">
-          <span class="bg-gray-100 rounded-xl px-3.5 py-3.5 text-xs font-bold text-gray-800 flex items-center gap-1.5 shrink-0">
+        <div id="phoneInputWrap" class="flex items-center gap-2.5">
+          <span class="bg-gray-100 rounded-xl px-3.5 py-3.5 text-[13px] font-bold text-gray-800 flex items-center gap-1.5 shrink-0">
             🇮🇳 +91
           </span>
-          <input id="loginPhoneInput" type="tel" placeholder="Phone number" class="w-full bg-gray-100 rounded-xl px-3.5 py-3.5 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
+          <input id="loginPhoneInput" type="tel" placeholder="Phone number" class="w-full bg-gray-100 rounded-xl px-3.5 py-3.5 text-[13px] text-gray-900 placeholder-gray-400 focus:outline-none" />
         </div>
 
         <div class="flex items-center bg-gray-100 rounded-xl px-3.5">
-          <input id="loginPass" type="password" placeholder="Password" class="w-full bg-transparent py-3.5 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
+          <input id="loginPass" type="password" placeholder="Password" class="w-full bg-transparent py-3.5 text-[13px] text-gray-900 placeholder-gray-400 focus:outline-none" />
           <button type="button" onclick="togglePass('loginPass')" class="text-gray-800 text-sm pl-2">
             <i class="fa-regular fa-eye-slash"></i>
           </button>
         </div>
 
-        <p class="text-xs text-gray-700 pt-0.5">
+        <p class="text-[13px] text-gray-700 pt-0.5">
           Forgot password? <button type="button" onclick="switchModal('resetModal')" class="font-bold text-[#f5b800]">Reset</button>
         </p>
 
-        <button type="submit" class="w-full bg-gray-200 hover:bg-[#f5b800] text-gray-500 hover:text-gray-900 font-extrabold text-xs py-3.5 rounded-xl transition">
+        <button type="submit" class="w-full bg-gray-200 hover:bg-[#f5b800] text-gray-500 hover:text-gray-900 font-extrabold text-[13px] py-3.5 rounded-xl transition">
           LOG IN
         </button>
       </form>
 
       <div class="flex items-center gap-2.5 my-4">
         <div class="h-px bg-gray-200 flex-1"></div>
-        <span class="text-[11px] font-bold text-gray-700">OR</span>
+        <span class="text-xs font-bold text-gray-700">OR</span>
         <div class="h-px bg-gray-200 flex-1"></div>
       </div>
 
       <button type="button" onclick="alert('Google OAuth connect karein')" class="w-full bg-[#1a73e8] hover:bg-blue-700 text-white rounded-full py-1.5 px-2.5 flex items-center justify-between text-xs font-semibold shadow">
         <span class="w-7 h-7 rounded-full bg-sky-700 text-white flex items-center justify-center font-bold text-xs">S</span>
         <div class="flex-1 text-left pl-2.5 leading-tight">
-          <p class="text-[11px] font-semibold">Continue as Site</p>
-          <p class="text-[10px] text-blue-100 truncate">infosite093@gmail.com</p>
+          <p class="text-xs font-semibold">Continue as Site</p>
+          <p class="text-[11px] text-blue-100 truncate">infosite093@gmail.com</p>
         </div>
         <span class="w-7 h-7 rounded-full bg-white flex items-center justify-center font-black text-sm">
           <span class="bg-gradient-to-tr from-blue-600 via-red-500 to-yellow-400 bg-clip-text text-transparent">G</span>
@@ -819,12 +831,12 @@
     </div>
   </div>
 
-  <!-- MODAL 2: RECOVER PASSWORD (Working Email & Phone Tabs) -->
-  <div id="resetModal" class="fixed inset-0 z-50 bg-black/60 hidden items-center justify-center p-4">
-    <div class="bg-white w-full max-w-sm rounded-3xl p-5 relative shadow-2xl">
+  <!-- MODAL 2: RECOVER PASSWORD -->
+  <div id="resetModal" class="fixed inset-0 z-50 bg-black/65 hidden items-end justify-center pt-12">
+    <div class="bg-white w-full max-w-[420px] rounded-t-[28px] px-5 pt-6 pb-7 relative shadow-2xl">
       <div class="flex items-center justify-between mb-4">
         <span class="w-8"></span>
-        <h3 class="font-extrabold text-[17px] text-gray-900 tracking-tight">Recover a password</h3>
+        <h3 class="font-extrabold text-[18px] text-gray-900 tracking-tight">Recover a password</h3>
         <button type="button" onclick="closeModals()" class="w-8 h-8 rounded-xl bg-gray-100 text-gray-700 flex items-center justify-center">
           <i class="fa-solid fa-xmark text-sm"></i>
         </button>
@@ -844,12 +856,10 @@
       </p>
 
       <form onsubmit="handleFormSubmit(event, 'Password Reset')" class="space-y-2.5">
-        <!-- Email Reset Input -->
         <div id="resetEmailWrap">
           <input id="resetEmailInput" type="email" placeholder="Email" class="w-full bg-gray-100 rounded-xl px-3.5 py-3.5 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
         </div>
 
-        <!-- Phone Reset Input -->
         <div id="resetPhoneWrap" class="hidden flex items-center gap-2">
           <span class="bg-gray-100 rounded-xl px-3.5 py-3.5 text-xs font-bold text-gray-800 flex items-center gap-1.5 shrink-0">
             🇮🇳 +91
@@ -869,8 +879,8 @@
   </div>
 
   <!-- MODAL 3: REGISTRATION -->
-  <div id="registerModal" class="fixed inset-0 z-50 bg-black/60 hidden items-center justify-center p-4">
-    <div class="bg-white w-full max-w-sm rounded-3xl p-5 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+  <div id="registerModal" class="fixed inset-0 z-50 bg-black/65 hidden items-end justify-center pt-12">
+    <div class="bg-white w-full max-w-[420px] rounded-t-[28px] px-5 pt-6 pb-7 relative shadow-2xl max-h-[90vh] overflow-y-auto">
       <div class="flex items-center justify-between mb-3">
         <i class="fa-regular fa-comments text-gray-700 text-lg"></i>
         <h3 class="font-extrabold text-base text-gray-900">REGISTRATION</h3>
@@ -961,7 +971,9 @@
       const modal = document.getElementById(id);
       modal.classList.remove('hidden');
       modal.classList.add('flex');
-      if (id === 'resetModal') {
+      if (id === 'loginModal') {
+        switchLoginTab('phone');
+      } else if (id === 'resetModal') {
         switchResetTab('email');
       }
     }
@@ -987,13 +999,13 @@
       if (tab === 'email') {
         emailWrap.classList.remove('hidden');
         phoneWrap.classList.add('hidden');
-        tabEmailBtn.className = 'brand-yellow text-gray-900 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2 shadow-2xs';
-        tabPhoneBtn.className = 'bg-gray-100 text-gray-800 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2';
+        tabEmailBtn.className = 'brand-yellow text-gray-900 font-bold text-[13px] py-3 rounded-xl flex items-center justify-center gap-2 shadow-2xs';
+        tabPhoneBtn.className = 'bg-gray-100 text-gray-800 font-bold text-[13px] py-3 rounded-xl flex items-center justify-center gap-2';
       } else {
         phoneWrap.classList.remove('hidden');
         emailWrap.classList.add('hidden');
-        tabPhoneBtn.className = 'brand-yellow text-gray-900 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2 shadow-2xs';
-        tabEmailBtn.className = 'bg-gray-100 text-gray-800 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2';
+        tabPhoneBtn.className = 'brand-yellow text-gray-900 font-bold text-[13px] py-3 rounded-xl flex items-center justify-center gap-2 shadow-2xs';
+        tabEmailBtn.className = 'bg-gray-100 text-gray-800 font-bold text-[13px] py-3 rounded-xl flex items-center justify-center gap-2';
       }
     }
 

